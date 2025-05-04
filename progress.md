@@ -1,0 +1,2 @@
+Pat: i got a basic link to work using two rfm95s and the adafruit circuit python library one is connected to a pi zero 2w the other to a pi pico but i think my setup isnt optimal for long range.
+currently trying different settings to see if it works betterl.
