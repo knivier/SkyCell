@@ -79,7 +79,7 @@ if rfm_connected == False:
 #rfm9x.tx_power = 23
 rfm9x.signal_bandwidth = 125000
 rfm9x.coding_rate = 5
-rfm9x.spreading_factor = 8
+rfm9x.spreading_factor = 12
 
 # Note that the radio is configured in LoRa mode so you can't control sync
 # word, encryption, frequency deviation, or other settings!
@@ -112,14 +112,14 @@ print("oled code done")
 # This is a limitation of the radio packet size, so if you need to send larger
 # amounts of data you will need to break it into smaller send calls.  Each send
 # call will wait for the previous one to finish before continuing.
-sleep_time = 10
-current_time = 0
-while current_time <= sleep_time:
-    print("Sleeping for {0} seconds".format(sleep_time - current_time))
-    time.sleep(.5)
-    current_time += 1
-    rfm9x.send(bytes("Hello world!\r\n", "utf-8"))
-    print("Sent Hello World message!")
+#sleep_time = 10
+#current_time = 0
+#while current_time <= sleep_time:
+#    print("Sleeping for {0} seconds".format(sleep_time - current_time))
+#    time.sleep(.5)
+#    current_time += 1
+#    rfm9x.send(bytes("Hello world!\r\n", "utf-8"))
+#    print("Sent Hello World message!")
 
 
 rfm9x.agc = True
@@ -132,7 +132,9 @@ print("Waiting for packets...")
 
 packet_number = 0
 while True:
-    packet = rfm9x.receive()
+    packet = rfm9x.receive(timeout=2.0, with_ack=True)
+    # If you want to receive packets with an acknowledgement, set the with_ack
+    # parameter to True.
     # Optionally change the receive timeout from its default of 0.5 seconds:
     # packet = rfm9x.receive(timeout=5.0)
     # If no packet was received during the timeout then None is returned.

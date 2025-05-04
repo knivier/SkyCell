@@ -10,7 +10,7 @@ sleep_time = 0
 current_time = 1
 
 while current_time <= sleep_time:
-    print("Sleeping for {0} seconds".format(sleep_time - current_time)) 
+    print("Sleeping for {0} seconds".format(sleep_time - current_time))
     time.sleep(1)
     current_time += 1
 
@@ -60,14 +60,19 @@ if rfm_connected == False:
 rfm9x.tx_power = 20
 rfm9x.signal_bandwidth = 125000
 rfm9x.coding_rate = 5
-#rfm9x.spreading_factor = 12
+rfm9x.spreading_factor = 11
 
 
 sleep_time = 1000
 current_time = 0
 while current_time <= sleep_time:
-    print("Sleeping for {0} seconds".format(sleep_time - current_time))
-    time.sleep(.5)
+    print("continuing for {0} seconds".format(sleep_time - current_time))
+    time.sleep(1) #was .5
     current_time += 1
     rfm9x.send(bytes("Hello world!\r\n", "utf-8"))
     print("Sent Hello World message!")
+    # print if we got an ack back
+    if rfm9x.receive(with_ack=True):
+        print("ACK received")
+    else:
+        print("No ACK received")
