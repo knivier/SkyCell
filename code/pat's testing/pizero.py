@@ -60,7 +60,8 @@ if rfm_connected == False:
 rfm9x.tx_power = 20
 rfm9x.signal_bandwidth = 125000
 rfm9x.coding_rate = 5
-rfm9x.spreading_factor = 11
+rfm9x.spreading_factor = 12
+rfm9x.ack_wait = 1
 
 
 sleep_time = 1000

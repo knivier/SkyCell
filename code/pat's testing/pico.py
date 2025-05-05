@@ -124,16 +124,18 @@ print("oled code done")
 
 rfm9x.agc = True
 # Wait to receive packets.  Note that this library can't receive data at a fast
-# rate, in fact it can only receive and process one 252 byte packet at a time.
+# rate, in fact it can only receive and process one 252 byte packet at a time. 
 # This means you should only use this for low bandwidth scenarios, like sending
 # and receiving a single message at a time.
 print("Waiting for packets...")
 
 
 packet_number = 0
+rfm9x.ack_delay= 0.2
+rfm9x.ack_retries = 5
 while True:
-    packet = rfm9x.receive(timeout=2.0, with_ack=True)
-    # If you want to receive packets with an acknowledgement, set the with_ack
+    packet = rfm9x.receive(timeout=10.0, with_ack=True)
+    # If you want to receive packets with an acknowledgement, set the with_ack 
     # parameter to True.
     # Optionally change the receive timeout from its default of 0.5 seconds:
     # packet = rfm9x.receive(timeout=5.0)

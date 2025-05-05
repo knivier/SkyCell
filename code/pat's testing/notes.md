@@ -1,2 +1,1 @@
-sf 10 works sf 11 doesnt seem to be working if time between packets is too small
-might be this specific library though
+sf 11 works sf 12 doesnt i fixed sf 11 by increasing timeout but its already at 5 now
