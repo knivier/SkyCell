@@ -61,7 +61,7 @@ rfm9x.tx_power = 20
 rfm9x.signal_bandwidth = 125000
 rfm9x.coding_rate = 5
 rfm9x.spreading_factor = 12
-rfm9x.ack_wait = 1
+rfm9x.ack_wait = 2
 
 
 sleep_time = 1000
@@ -70,10 +70,10 @@ while current_time <= sleep_time:
     print("continuing for {0} seconds".format(sleep_time - current_time))
     time.sleep(1) #was .5
     current_time += 1
-    rfm9x.send(bytes("Hello world!\r\n", "utf-8"))
+    received_ack = rfm9x.send_with_ack(bytes("Hello world!\r\n", "utf-8"))
     print("Sent Hello World message!")
     # print if we got an ack back
-    if rfm9x.receive(with_ack=True):
+    if received_ack:
         print("ACK received")
     else:
         print("No ACK received")

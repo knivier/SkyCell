@@ -1,1 +1,2 @@
-sf 11 works sf 12 doesnt i fixed sf 11 by increasing timeout but its already at 5 now
+sf 12 works and ack too
+todo:
