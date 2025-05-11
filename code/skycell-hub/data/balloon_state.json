@@ -3,10 +3,10 @@
   "latitude": 0.0,
   "longitude": 0.0,
   "temperature": 3.0,
-  "signal_strength": -100,
-  "bandwidth": 125,
-  "barometric": 1013.25,
-  "last_updated": "example-WARNING",
-  "battery": 100,
+  "signal_strength": 0,
+  "bandwidth": 0,
+  "barometric": 0,
+  "last_updated": "",
+  "battery": 0,
   "interference": 0
 }
