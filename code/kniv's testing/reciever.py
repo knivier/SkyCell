@@ -1,11 +1,16 @@
 import serial
 import time
 import os
+import configparser
 from collections import defaultdict
 
-# CONFIG
-PORT = '/dev/ttyUSB0'  # Or 'COM3' on Windows
+config = configparser.ConfigParser()
+config.read(r"kniv's testing\sets.ini")
+settings = config["Settings"]
+
+PORT = 'COM3'  # Update as needed
 BAUDRATE = 9600
+CHUNK_SIZE = int(settings.get("chunk_size", 200))
 
 # Setup
 ser = serial.Serial(PORT, BAUDRATE, timeout=1)
@@ -45,7 +50,7 @@ def main():
     print("Listening for packets...")
     while True:
         if ser.in_waiting:
-            packet = ser.read_until(expected=b'\n', size=255)
+            packet = ser.read_until(expected=b'\n', size=CHUNK_SIZE + 3)
             parse_packet(bytearray(packet.strip()))
         else:
             time.sleep(0.05)
