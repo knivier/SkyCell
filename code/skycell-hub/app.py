@@ -1,3 +1,5 @@
+# This primary app connects the flask app to the telemetry database and the balloon state JSON file.
+# It serves the dashboard and provides an API endpoint for the latest telemetry data.
 from flask import Flask, render_template, jsonify
 import json
 import sqlite3

@@ -1,3 +1,5 @@
+# This interprets telemetry.db data and posts it on a GUI
+# It will need to be re-ran as telemetry.db is updated
 import sqlite3
 import matplotlib.pyplot as plt
 from datetime import datetime

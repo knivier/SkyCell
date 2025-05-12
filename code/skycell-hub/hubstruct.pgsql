@@ -11,3 +11,5 @@ skycell_dashboard/
 └── modules/
     ├── data_fetcher.py    # Connects to LoRa / handles parsing
     └── utils.py           # General helpers like unit conversion
+
+Project outline!
