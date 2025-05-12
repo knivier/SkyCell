@@ -8,7 +8,7 @@ def fetch_data():
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute("""
-        SELECT last_updated, altitude, latitude, longitude,
+        SELECT timestamp, altitude, latitude, longitude,
                temperature, signal_strength, bandwidth,
                barometric, battery, interference
         FROM telemetry
@@ -17,8 +17,18 @@ def fetch_data():
     conn.close()
     return rows
 
+def parse_timestamp(ts):
+    try:
+        return datetime.fromisoformat(ts)
+    except ValueError:
+        # Fallback in case it's not ISO formatted
+        try:
+            return datetime.strptime(ts, "%Y-%m-%d %H:%M:%S")
+        except Exception:
+            return None
+
 def plot_data(rows):
-    timestamps = [datetime.fromisoformat(row[0]) for row in rows]
+    timestamps = [parse_timestamp(row[0]) for row in rows if parse_timestamp(row[0])]
     altitude = [row[1] for row in rows]
     temperature = [row[4] for row in rows]
     signal_strength = [row[5] for row in rows]
