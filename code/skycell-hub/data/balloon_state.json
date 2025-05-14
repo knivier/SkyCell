@@ -4,7 +4,7 @@
   "longitude": 0.0,
   "temperature": 3.0,
   "signal_strength": 0,
-  "bandwidth": 0,
+  "bandwidth": 5,
   "barometric": 0,
   "last_updated": "",
   "battery": 0,
