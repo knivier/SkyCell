@@ -1,0 +1,11 @@
+// local mqtt
+
+sudo systemctl start mosquito // to start a local mosquite server
+mosquitto_sub -h localhost -t test/topic // to sub 
+mosquitto_pub -h localhost -t test/topic -m "hello" // send hello message
+
+// broker.hivemq.com 
+mosquitto_sub -h broker.hivemq.com -t patstest/topic
+mosquitto_pub -h broker.hivemq.com -t patstest/topic -m "hello"
+
+
