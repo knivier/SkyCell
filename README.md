@@ -7,3 +7,9 @@ If you want to see actual mantained projects, go to code to see individual membe
 
 edit from pat: i plan to put all my work here
 
+
+Progress:
+
+as of may 18th:
+Pat : got meshtastic nodes to comunicate with each and got the gps module to work now im going to connect the gps to the air meshtastic node
+the plan as of now is to also have an sdr and an sbc to log noise levels across frequencies and also use @meddy's rocket flight computer to log all the other sensor data i think
