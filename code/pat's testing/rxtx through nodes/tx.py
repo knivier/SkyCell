@@ -2,18 +2,26 @@ import time
 from meshtastic.serial_interface import SerialInterface
 
 iface = SerialInterface("COM13")
-destination_id = "no screen protector"  # Replace with the actual node ID of the receiver
+print("Connected to", iface)
+destination_id = "433e5eb8"  # Replace with the actual node ID of the receiver
+print(iface.nodes)
 
 def send_with_ack(message, destination_id, timeout=5, retries=3):
     for attempt in range(retries):
         print(f"Sending: {message} (try {attempt + 1})")
         packet = iface.sendText(message, destinationId=destination_id)
-        ack = iface.waitForAck(packet["id"], timeout)
-        if ack:
-            print("✅ ACK received")
-            return True
-        else:
-            print("❌ No ACK, retrying...")
+        try:
+            # Wait for an ACK or NAK response (with timeout implemented separately)
+            ack_packet = iface.waitForAckNak()  
+
+            if ack_packet is not None and ack_packet.id == packet.id:
+                print("ACK received for packet id", packet.id)
+            else:
+                print("No ACK or mismatched ACK received.")
+        except:
+            print("Timeout waiting for ACK/NAK. Retrying...")
+            continue
+
     return False
 
 start_time = time.time()
