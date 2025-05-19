@@ -1,4 +1,5 @@
 from meshtastic.serial_interface import SerialInterface
+import time
 
 def on_receive(packet, interface):
     print("📩 Received packet:")
