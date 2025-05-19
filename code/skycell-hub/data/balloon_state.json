@@ -1,12 +1,12 @@
 {
-  "altitude": 0,
-  "latitude": 0.0,
-  "longitude": 0.0,
-  "temperature": 3.0,
-  "signal_strength": 0,
-  "bandwidth": 5,
-  "barometric": 0,
-  "last_updated": "",
-  "battery": 0,
-  "interference": 0
+  "altitude": 209.9,
+  "latitude": 42.281439,
+  "longitude": -83.74356,
+  "temperature": -20.0,
+  "signal_strength": 0.88,
+  "bandwidth": 7,
+  "barometric": 699.97,
+  "last_updated": "2025-05-19T00:01:31.057383Z",
+  "battery": 98.57,
+  "interference": 0.1
 }
