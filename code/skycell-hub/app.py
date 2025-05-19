@@ -8,8 +8,8 @@ from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
-DATA_FILE = r'skycell-hub\data\balloon_state.json'
-DB_FILE = r'skycell-hub\data\telemetry.db'
+DATA_FILE = r'code\skycell-hub\data\balloon_state.json'
+DB_FILE = os.path.join('skycell-hub', 'data', 'telemetry.db')
 
 # Globals for log file management
 log_file_path = None

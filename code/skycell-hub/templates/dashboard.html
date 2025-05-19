@@ -104,8 +104,8 @@
 </head>
 <body>
   <h1>SkyCell Telemetry Dashboard</h1>
-  <div class="logo-section"></div>
-    <img src="SCTEUM.png" alt="SkyCell Logo" class="logo">
+  <div class="logo-section">
+    <img src="/static/SCTEUM.png" alt="SkyCell Logo" class="logo">
   </div>
 
   <style>
@@ -254,13 +254,13 @@
 
   <div class="image-section">
     <h2 class="label" style="font-size:1.25rem;">Latest Image</h2>
-    <img src="/static/images/latest.jpg" alt="SkyCell Camera Image">
+    <img src="/static/images/latest.jpg" alt="SkyCell Camera Image" onerror="this.onerror=null;this.src='/static/default.jpg';">
   </div>
 
   <script>
     async function fetchData() {
       try {
-        const res = await fetch('/api/data');
+        const res = await fetch('code\skycell-hub\data\balloon_state.json');
         const data = await res.json();
         document.getElementById('altitude').textContent = data.altitude + ' m';
         document.getElementById('gps').textContent = `${data.latitude}, ${data.longitude}`;
@@ -279,6 +279,7 @@
     fetchData();
     setInterval(fetchData, 5000);
   </script>
+  <!--
   <script>
 function updateTelemetry() {
     fetch('/api/data')
@@ -304,6 +305,7 @@ function updateTelemetry() {
 setInterval(updateTelemetry, 3000);
 updateTelemetry();
 </script>
+  -->
 
 </body>
 </html>
