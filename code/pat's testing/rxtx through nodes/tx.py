@@ -18,8 +18,9 @@ def send_with_ack(message, destination_id, timeout=5, retries=3):
                 print("ACK received for packet id", packet.id)
             else:
                 print("No ACK or mismatched ACK received.")
-        except:
-            print("Timeout waiting for ACK/NAK. Retrying...")
+        except all as e:
+            print(e)
+
             continue
 
     return False

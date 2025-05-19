@@ -5,7 +5,9 @@ def on_receive(packet, interface):
     print("📩 Received packet:")
     print(packet)
 
-iface = SerialInterface(onReceive=on_receive)
+iface = SerialInterface()
+iface.addReceiveHandler(on_receive)
+
 
 print("Receiver running... Press Ctrl+C to stop.")
 try:
