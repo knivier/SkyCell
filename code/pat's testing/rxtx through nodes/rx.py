@@ -6,7 +6,7 @@ def on_receive(packet, interface):
     print(packet)
 
 iface = SerialInterface()
-iface.addReceiveHandler(on_receive)
+iface._addResponseHandler(callback=on_receive, ackPermitted=True)
 
 
 print("Receiver running... Press Ctrl+C to stop.")
