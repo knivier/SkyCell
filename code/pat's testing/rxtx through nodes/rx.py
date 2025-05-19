@@ -1,18 +1,16 @@
-from meshtastic.serial_interface import SerialInterface
+import meshtastic.serial_interface
+from pubsub import pub
 import time
 
-def on_receive(packet, interface):
-    print("📩 Received packet:")
-    print(packet)
+interface = meshtastic.serial_interface.SerialInterface()
 
-iface = SerialInterface()
-iface.addReceiveHandler(on_receive)
+def onReceive(packet, interface):
+    if 'decoded' in packet:
+        message_bytes = packet['decoded']['payload']
+        message_string = message_bytes.decode('utf-8')
+        print(message_string)
 
+pub.subscribe(onReceive, 'meshtastic.receive.text')
 
-print("Receiver running... Press Ctrl+C to stop.")
-try:
-    while True:
-        time.sleep(1)
-except KeyboardInterrupt:
-    iface.close()
-    print("Receiver stopped.")
+while True:
+    time.sleep(1)
