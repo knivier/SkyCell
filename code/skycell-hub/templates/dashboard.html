@@ -285,7 +285,6 @@ function updateTelemetry() {
                 document.getElementById("last-updated").innerText = data.last_updated;
                 document.getElementById("battery").innerText = data.battery + " %";
                 document.getElementById("interference").innerText = data.interference || "No interference detected";
-                // Update image if needed
                 document.getElementById("photo").src = data.image || "/static/default.jpg";
             }
         });
