@@ -35,3 +35,24 @@ while time.time() - start_time < 10:
     time.sleep(0.2)  # Short delay between attempts (adjustable)
 
 iface.close()
+
+import meshtastic.serial_interface
+import time
+
+message = "Test Message"
+sender_node_id = '433e5eb8'
+
+interface = meshtastic.serial_interface.SerialInterface()
+
+def send_message(message):
+    interface.sendText(
+        text=message,
+        destinationId=sender_node_id,
+        wantAck=True,
+        wantResponse=True
+        )
+
+send_message(message)
+
+while True:
+    time.sleep(0.1)
