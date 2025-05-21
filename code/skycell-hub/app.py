@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template
 import json
 import sqlite3
 from datetime import datetime
@@ -16,9 +16,13 @@ LOG_DIR = r'skycell-hub\data\master-logs'
 os.makedirs(LOG_DIR, exist_ok=True)
 
 # Generate a unique log filename for this session
-start_time = datetime.now()
-log_filename = start_time.strftime('%d%m%Y.%S.%f')[:-3] + '.log'
-log_path = os.path.join(LOG_DIR, log_filename)
+log_filename = None
+log_path = None
+if not os.environ.get('WERKZEUG_RUN_MAIN'):
+    # Only set log file in the original process, not the reloader
+    start_time = datetime.now()
+    log_filename = start_time.strftime('%d%m%Y.%S.%f')[:-3] + '.log'
+    log_path = os.path.join(LOG_DIR, log_filename)
 
 def read_balloon_data():
     if not os.path.exists(DATA_FILE):
@@ -29,6 +33,22 @@ def read_balloon_data():
 def log_to_db(data):
     conn = sqlite3.connect(DB_FILE)
     c = conn.cursor()
+    # Ensure the telemetry table exists
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS telemetry (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            timestamp TEXT,
+            altitude REAL,
+            latitude REAL,
+            longitude REAL,
+            temperature REAL,
+            signal_strength REAL,
+            bandwidth REAL,
+            barometric REAL,
+            battery REAL,
+            interference REAL
+        )
+    ''')
     c.execute('''
         INSERT INTO telemetry (
             timestamp, altitude, latitude, longitude, temperature,
@@ -53,10 +73,11 @@ def log_to_db(data):
 def background_logger():
     while True:
         data = read_balloon_data()
-        if data:
+        if data and log_path:
             data['last_updated'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             with open(log_path, 'a') as log_file:
                 log_file.write(json.dumps(data) + '\n')
+            log_to_db(data)
         time.sleep(1)
 
 @app.route('/')
@@ -69,13 +90,12 @@ def api_data():
     if data:
         data['last_updated'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         log_to_db(data)
-        return jsonify(data)
-    else:
-        return jsonify({"error": "No data found"}), 404
+        return data
+    return {}
 
 if __name__ == '__main__':
-    # Start the background logging thread
-    thread = threading.Thread(target=background_logger, daemon=True)
-    thread.start()
-    
+    # Only start the background logging thread in the original process, not the reloader
+    if not os.environ.get('WERKZEUG_RUN_MAIN'):
+        thread = threading.Thread(target=background_logger, daemon=True)
+        thread.start()
     app.run(debug=True)
