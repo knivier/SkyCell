@@ -5,7 +5,7 @@ import os
 import json
 import ast  # safer than eval
 
-interface = meshtastic.serial_interface.SerialInterface("COM14")
+interface = meshtastic.serial_interface.SerialInterface("COM15")
 
 print("Connected to Meshtastic interface\n")
 
