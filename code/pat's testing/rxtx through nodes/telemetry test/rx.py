@@ -5,7 +5,7 @@ import os
 import json
 import ast  # safer than eval
 
-interface = meshtastic.serial_interface.SerialInterface("COM15")
+interface = meshtastic.serial_interface.SerialInterface("/dev/ttyUSB0")
 
 print("Connected to Meshtastic interface\n")
 
@@ -37,14 +37,14 @@ def write_telemetry(telemetry):
         print("❌ Failed to convert telemetry to JSON:", e)
         return
 
-    with open("telemetry_log.json", 'a') as tl:
-        tl.write(telemetry_json + '\n')
+    with open("telemetry_log.txt", 'a') as tl:
+        tl.write(telemetry + '\n')
         tl.flush()
         os.fsync(tl.fileno())
         print("Telemetry data appended to log file")
 
-    with open("telemetry.json", 'w') as t:
-        t.write(telemetry_json)
+    with open("telemetry.txt", 'w') as t:
+        t.write(telemetry)
         t.flush()
         os.fsync(t.fileno())
         print("Telemetry data written to telemetry.json")

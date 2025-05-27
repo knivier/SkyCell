@@ -1,5 +1,3 @@
-
-
 import meshtastic.serial_interface
 import time
 
@@ -15,7 +13,7 @@ test_telemetry = {
 }
 print("Test telemetry: ", test_telemetry)
 
-interface = meshtastic.serial_interface.SerialInterface("COM13")
+interface = meshtastic.serial_interface.SerialInterface("/dev/ttyUSB1")
 print("Connected to Meshtastic interface\n")
 
 def send_message(message):
