@@ -17,7 +17,7 @@ def onReceive(packet, interface):
         
         # check if the message is a telemetry message
         #check if the message starts with tlm
-        if message_string.startswith("{'telemetry'"):
+        if message_string.startswith('{"telemetry"') or message_string.startswith("{'telemetry':"):
             # extract the telemetry data
             print(f"Telemetry data: {message_string}")
             write_telemetry(message_string)
@@ -37,13 +37,13 @@ def write_telemetry(telemetry):
         print("❌ Failed to convert telemetry to JSON:", e)
         return
 
-    with open("telemetry_log.txt", 'a') as tl:
+    with open("telemetry_log.json", 'a') as tl:
         tl.write(telemetry + '\n')
         tl.flush()
         os.fsync(tl.fileno())
         print("Telemetry data appended to log file")
 
-    with open("telemetry.txt", 'w') as t:
+    with open("telemetry.json", 'w') as t:
         t.write(telemetry)
         t.flush()
         os.fsync(t.fileno())
