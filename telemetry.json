@@ -1,1 +1,1 @@
-{"telemetry":{"battery":100, "temperature": 25, "message number":41}}
+{'telemetry': {'battery': 100, 'temperature': 25, 'humidity': 50}}
