@@ -1,0 +1,65 @@
+# start of Meshtastic configure yaml
+channel_url: https://meshtastic.org/e/#CgcSAQE6AggNEg8IATgBQANIAVAeaAHIBgE
+config:
+  bluetooth:
+    enabled: true
+    fixedPin: 123456
+  device:
+    nodeInfoBroadcastSecs: 10800
+  display:
+    screenOnSecs: 600
+  lora:
+    configOkToMqtt: true
+    hopLimit: 3
+    region: US
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 30
+    usePreset: true
+  network:
+    enabledProtocols: 1
+    ntpServer: meshtastic.pool.ntp.org
+  position:
+    broadcastSmartMinimumDistance: 100
+    broadcastSmartMinimumIntervalSecs: 30
+    fixedPosition: false
+    gpsMode: NOT_PRESENT
+    gpsUpdateInterval: 120
+    positionBroadcastSecs: 300
+    positionFlags: 811
+  power:
+    lsSecs: 300
+    minWakeSecs: 10
+    sdsSecs: 4294967295
+    waitBluetoothSecs: 60
+  security:
+    privateKey: base64:WGvaUUCvOJV8QeP3hlPErrhw81djW29Kjp7fBneaqEM=
+    publicKey: base64:13mqFdDc3tOyyNYko0jq4+0HDjhPsavy2BMkCQbflE4=
+    serialEnabled: true
+location:
+  alt: 63
+  lat: 46.0560573
+  lon: -71.9231292
+module_config:
+  ambientLighting:
+    blue: 56
+    current: 10
+    green: 87
+    red: 61
+  detectionSensor:
+    detectionTriggerType: LOGIC_HIGH
+    minimumBroadcastSecs: 45
+  mqtt:
+    address: mqtt.meshtastic.org
+    encryptionEnabled: true
+    password: large4cats
+    root: msh/US
+    username: meshdev
+  serial:
+    echo: false
+    enabled: false
+    rxd: 7
+    txd: 28
+owner: with screen protector
+owner_short: wsp
+

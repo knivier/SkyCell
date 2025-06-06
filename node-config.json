@@ -1,0 +1,45 @@
+{
+  "bluetooth": {
+    "enabled": true,
+    "fixedPin": 123456
+  },
+  "device": {
+    "nodeInfoBroadcastSecs": 10800
+  },
+  "display": {
+    "screenOnSecs": 600
+  },
+  "lora": {
+    "configOkToMqtt": true,
+    "hopLimit": 3,
+    "region": "US",
+    "sx126xRxBoostedGain": true,
+    "txEnabled": true,
+    "txPower": 30,
+    "usePreset": true
+  },
+  "network": {
+    "enabledProtocols": 1,
+    "ntpServer": "meshtastic.pool.ntp.org"
+  },
+  "position": {
+    "broadcastSmartMinimumDistance": 100,
+    "broadcastSmartMinimumIntervalSecs": 30,
+    "fixedPosition": false,
+    "gpsMode": "NOT_PRESENT",
+    "gpsUpdateInterval": 120,
+    "positionBroadcastSecs": 300,
+    "positionFlags": 811
+  },
+  "power": {
+    "lsSecs": 300,
+    "minWakeSecs": 10,
+    "sdsSecs": 4294967295,
+    "waitBluetoothSecs": 60
+  },
+  "security": {
+    "privateKey": "base64:WGvaUUCvOJV8QeP3hlPErrhw81djW29Kjp7fBneaqEM=",
+    "publicKey": "base64:13mqFdDc3tOyyNYko0jq4+0HDjhPsavy2BMkCQbflE4=",
+    "serialEnabled": true
+  }
+}
