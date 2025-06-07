@@ -3,13 +3,13 @@ import subprocess
 import time
 
 # Parameters
-start_freq = 24_000_000       # 24 MHz
+start_freq = 26_000_000       # 24 MHz
 end_freq = 1_500_000_000      # 1.5 GHz
-step_freq = 2_400_000         # 2.4 MHz (max sample rate of RTL-SDR)
+step_freq = 2_000_000         # 2.4 MHz (max sample rate of RTL-SDR)
 sample_rate = 2_400_000       # 2.4 MSPS
 duration_sec = 0.1            # 100 ms
 samples = int(sample_rate * duration_sec)
-gain = 20                     # Adjust as needed
+gain = 0                     # Adjust as needed
 output_dir = "iq_data"
 
 os.makedirs(output_dir, exist_ok=True)
