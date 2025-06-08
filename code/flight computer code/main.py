@@ -15,8 +15,8 @@ print("\nConnected to Meshtastic interface\n")
 def send_message(message):
     mesh_node.sendText(
         text=message,
-        wantAck=True,
-        wantResponse=True 
+        
+        
         )
 
 
@@ -46,6 +46,7 @@ while run == True:
     
     try:
         send_message(tx_telemetry)
+        #send_message
         print("Sent telemetry: ", tx_telemetry)
     except Exception as e:
         print(f"Error sending telemetry message attempting reconection: {e}")
@@ -53,7 +54,7 @@ while run == True:
         mesh_node = meshtastic.serial_interface.SerialInterface(meshdevice)
         print("Reconnected to Meshtastic interface\n")
 
-    time.sleep(15)  # Adjust sleep time as needed
+    time.sleep(8)  # Adjust sleep time as needed
 
 
 mesh_node.close()
