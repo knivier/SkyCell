@@ -54,7 +54,7 @@ while run == True:
         mesh_node = meshtastic.serial_interface.SerialInterface(meshdevice)
         print("Reconnected to Meshtastic interface\n")
 
-    time.sleep(8)  # Adjust sleep time as needed
+    time.sleep(10)  # Adjust sleep time as needed
 
 
 mesh_node.close()
