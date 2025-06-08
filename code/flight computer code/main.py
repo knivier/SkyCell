@@ -4,7 +4,7 @@ from telemetry import Telemetry
 
 
 run = True
-meshdevice = "/dev/ttyUSB0"  # Adjust this to your Meshtastic device path
+meshdevice = "/dev/ttyUSB0"  # Adjust this to your Meshtastic device path 
 mesh_node = meshtastic.serial_interface.SerialInterface(meshdevice)
 print("\nConnected to Meshtastic interface\n")
 
