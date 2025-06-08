@@ -50,6 +50,7 @@ while run == True:
         print(f"Error sending telemetry message attempting reconection: {e}")
         mesh_node.close()
         mesh_node = meshtastic.serial_interface.SerialInterface(meshdevice)
+        print("Reconnected to Meshtastic interface\n")
 
     time.sleep(3)  # Adjust sleep time as needed
 
