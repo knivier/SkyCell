@@ -4,8 +4,8 @@ from telemetry import Telemetry
 
 
 run = True
-
-mesh_node = meshtastic.serial_interface.SerialInterface("/dev/ttyUSB0")
+meshdevice = "/dev/ttyUSB0"  # Adjust this to your Meshtastic device path
+mesh_node = meshtastic.serial_interface.SerialInterface(meshdevice)
 print("Connected to Meshtastic interface\n")
 
 
@@ -47,7 +47,9 @@ while run == True:
         send_message(tx_telemetry)
         print("Sent telemetry: ", tx_telemetry)
     except Exception as e:
-        print(f"Error sending telemetry message: {e}")
+        print(f"Error sending telemetry message attempting reconection: {e}")
+        mesh_node.close()
+        mesh_node = meshtastic.serial_interface.SerialInterface(meshdevice)
 
     time.sleep(3)  # Adjust sleep time as needed
 
