@@ -39,6 +39,7 @@ while run == True:
     
     try:
         tx_telemetry = str(telemetry_data)
+        print("Telemetry string: ", tx_telemetry)
     except Exception as e:
         print(f"Error converting telemetry data to string: {e}")
         tx_telemetry = "Error in telemetry data"
@@ -52,7 +53,7 @@ while run == True:
         mesh_node = meshtastic.serial_interface.SerialInterface(meshdevice)
         print("Reconnected to Meshtastic interface\n")
 
-    time.sleep(3)  # Adjust sleep time as needed
+    time.sleep(15)  # Adjust sleep time as needed
 
 
 mesh_node.close()

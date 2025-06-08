@@ -1457,3 +1457,7 @@
 {'telemetry': {'battery': 100, 'temperature': 25, 'humidity': 50}}
 {'telemetry': {'battery': 100, 'temperature': 25, 'humidity': 50}}
 {'telemetry': {'battery': 100, 'temperature': 25, 'humidity': 50}}
+{'cpu_temp': 44.384, 'battery_voltage': None, 'gps_data': None}
+{'cpu_temp': 45.307, 'battery_voltage': None, 'gps_data': None}
+{'cpu_temp': 45.307, 'battery_voltage': None, 'gps_data': None}
+{'cpu_temp': 44.384, 'battery_voltage': None, 'gps_data': None}
