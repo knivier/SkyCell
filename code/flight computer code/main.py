@@ -1,7 +1,7 @@
 import meshtastic.serial_interface
 import time
 from telemetry import Telemetry
-
+import subprocess
 
 run = True
 meshdevice = "/dev/ttyUSB0"  # Adjust this to your Meshtastic device path 
@@ -41,12 +41,21 @@ while run == True:
         tx_telemetry = str(telemetry_data)
         print("Telemetry string: ", tx_telemetry)
     except Exception as e:
-        print(f"Error converting telemetry data to string: {e}")
+        print(f"Error converting telemetry data to string: {e}") # TX VIA COMMAND REMEMBER AND CHEC OR CHECK IF ITS NOT BECAUSE OF " AND " OR ' IN JSON DICTIONARY
         tx_telemetry = "Error in telemetry data"
     
     try:
-        send_message(tx_telemetry)
+        # Method 1: Using subprocess.run (recommended)
+        cmd = f'meshtastic --sendtext "{tx_telemetry}"'
+        result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+        if result.returncode == 0:
+            print("Sent telemetry:", tx_telemetry)
+        else:
+            print("Error sending telemetry:", result.stderr)
+        #send_message(tx_telemetry)
         #send_message
+        # run terminal command meshtastic --sentext "tx_telemetry"
+
         print("Sent telemetry: ", tx_telemetry)
     except Exception as e:
         print(f"Error sending telemetry message attempting reconection: {e}")
