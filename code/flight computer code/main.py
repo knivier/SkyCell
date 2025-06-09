@@ -53,8 +53,8 @@ while run == True:
             print("Sent telemetry:", tx_telemetry)
         else:
             print("Error sending telemetry:", result.stderr)'''
-        #send_message(tx_telemetry)
-        send_message("this is a telemetry message with a lot of numbers and letter : " + str(i))
+        send_message(tx_telemetry)
+        #send_message("this is a telemetry message with a lot of numbers and letter : " + str(i))
         # run terminal command meshtastic --sentext "tx_telemetry"
 
         print("Sent telemetry: ", tx_telemetry)

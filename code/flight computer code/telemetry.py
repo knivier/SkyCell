@@ -26,11 +26,10 @@ class Telemetry:
         self.gps_data = None
     
     def get_telemetry(self):
-        return {
-            "cpu_temp": self.cpu_temp,
-            "battery_voltage": self.battery_voltage,
-            "gps_data": self.gps_data
-        }
+        print(self.gps_data)
+        return f"telemetry_packet: cput({self.cpu_temp}) batv({self.battery_voltage}) gps({self.gps_data})"
+           
+        
         
 
 
