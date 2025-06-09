@@ -20,10 +20,10 @@ def send_message(message):
         )
 
 
-
+i = 0
 while run == True:
 
-    
+    i+=1
     telemetry = Telemetry()
     
     
@@ -45,15 +45,16 @@ while run == True:
         tx_telemetry = "Error in telemetry data"
     
     try:
+        '''
         # Method 1: Using subprocess.run (recommended)
         cmd = f'meshtastic --sendtext "{tx_telemetry}"'
         result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
         if result.returncode == 0:
             print("Sent telemetry:", tx_telemetry)
         else:
-            print("Error sending telemetry:", result.stderr)
+            print("Error sending telemetry:", result.stderr)'''
         #send_message(tx_telemetry)
-        #send_message
+        send_message("telemetry number: " + str(i))
         # run terminal command meshtastic --sentext "tx_telemetry"
 
         print("Sent telemetry: ", tx_telemetry)
