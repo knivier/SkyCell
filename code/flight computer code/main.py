@@ -15,7 +15,7 @@ print("\nConnected to Meshtastic interface\n")
 def send_message(message):
     mesh_node.sendText(
         text=message,
-        wantAck=False
+        wantAck=False # CHECK REGION SETTINGS AND ADJUST FOR NOSE TOLERANCE
         
         )
 
