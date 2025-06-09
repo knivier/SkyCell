@@ -1461,3 +1461,9 @@
 {'cpu_temp': 45.307, 'battery_voltage': None, 'gps_data': None}
 {'cpu_temp': 45.307, 'battery_voltage': None, 'gps_data': None}
 {'cpu_temp': 44.384, 'battery_voltage': None, 'gps_data': None}
+telemetry number: 1
+telemetry number: 2
+telemetry number: 3
+telemetry number: 4
+telemetry number: 5
+telemetry number: 6
