@@ -1,0 +1,6 @@
+prices in cad 
+battery holder 10$:
+https://www.amazon.ca/Thicken-Battery-Holder-Standard-Connector/dp/B07WP1CYYW/ref=mp_s_a_1_4?crid=185K8M068TGZ7&dib=eyJ2IjoiMSJ9.JPhmc3hC6pg_g8y0UJ7f1gI7rHIfmPk_emhbsrb6fQ0vpoa71rsGkC9EuFnKN1uZraavJ1fS1C2l1vHvDbnc3bQpNmvJ12PBXjXRy9u1a8nKe4FWyxRVMedwld76QWIkpCEZiHZUWEsT_IOKvZf64pYKYfBqPFx_HN_1r9RTYZ6zj54yuvOWY5IpSMX-_tf8vVlUPkNAapZ_Mh4qWaIAZw.QuJ8efhIDqNS7_7_S1pvq9FdocjDV1Jp0LXmEMPEs1k&dib_tag=se&keywords=8+aa+battery+holder&qid=1749435318&sprefix=8+aa+battery+%2Caps%2C117&sr=8-4
+
+aluminum heatsinks for thermal mass and better heat transfer at low pressures
+https://www.amazon.ca/Heatsinks-Raspberry-Heatsink-Aluminum-Conductive/dp/B0814V66JV/ref=mp_s_a_1_3?crid=23K7GXF2Y3TTK&dib=eyJ2IjoiMSJ9.LUqiuSxIa945cFGE6CMKNglirgOhz8V1cEDLPL48fLZeFO1ByZBCRq1kSes6cwZmSl028hCqqAlHgBfNR0tvY7CZz-KdUAl9FB7URq8MirRZyCKBDe6L0G3UDTY3hO3UEWTg3jvSsY97gZsFtSJ0gVmm83XQCyLhc6qlHV9kfTQmeIDSHFCACFdLa8_g4wJxdEOcyfEad-s9_9qfafGJjQ.Dc6ctl1gOp76CUnNFQtMIp082rbnjS742HF92a7XZs4&dib_tag=se&keywords=heatsink&qid=1749435375&sprefix=heats%2Caps%2C106&sr=8-3
