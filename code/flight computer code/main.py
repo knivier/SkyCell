@@ -38,7 +38,7 @@ while run == True:
     print("Telemetry data: ", telemetry_data)
     
     try:
-        tx_telemetry = str(telemetry_data + f" paknum{packet_number})")
+        tx_telemetry = str(telemetry_data + f" paknum({packet_number})")
         print("Telemetry string: ", tx_telemetry)
     except Exception as e:
         print(f"Error converting telemetry data to string: {e}") # TX VIA COMMAND REMEMBER AND CHEC OR CHECK IF ITS NOT BECAUSE OF " AND " OR ' IN JSON DICTIONARY
