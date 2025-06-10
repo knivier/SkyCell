@@ -1,1 +1,1 @@
-this is a telemetry message with a lot of numbers and letter : 98
+telemetry_packet: cput(42.538) batv(None) gps(None)

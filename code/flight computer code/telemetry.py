@@ -27,7 +27,7 @@ class Telemetry:
     
     def get_telemetry(self):
         print(self.gps_data)
-        return f"telemetry_packet: cput({self.cpu_temp}) batv({self.battery_voltage}) gps({self.gps_data})"
+        return f"telemetry_packet: cput({self.cpu_temp}) batv({self.battery_voltage}) gps(lat({self.gps_data['latitude']}) long({self.gps_data['longitude']}) alt({self.gps_data['altitude']}) hasfix({self.gps_data['has_fix']}))"
            
         
         

@@ -58,7 +58,7 @@ class GPSReader:
             if line.startswith('$'):
                 return line
         except Exception as e:
-            print(f"Error reading from serial port: {e}")
+            print(f"Error reading from gps serial port (function read_nmea_sentence): {e}")
         return None
     
     def parse_gps_data(self, nmea_sentence):
@@ -144,8 +144,8 @@ class GPSReader:
                 
                 time.sleep(0.1)  # Small delay to prevent excessive CPU usage
                 
-        except KeyboardInterrupt:
-            print("\nStopping GPS reader...")
+        except Exception as e:
+            print("\nError during GPS reading:", e)
         finally:
             self.disconnect()
     
