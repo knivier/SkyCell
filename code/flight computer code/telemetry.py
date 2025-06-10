@@ -10,7 +10,7 @@ def get_cpu_temp():
             temp_str = f.read().strip()
             return int(temp_str) / 1000.0  # Convert to °C
     except FileNotFoundError:
-        return None
+        return "fail"
 def get_battery_voltage():
     # Placeholder for battery voltage reading logic
     # Implement this function to read the actual battery voltage
@@ -44,7 +44,12 @@ class Telemetry:
         gps = GPSReader(port=self.gps_connection_port, baudrate=9600)
 
         if not gps.connect():
-            return None
+            return {
+                                'latitude': "None",
+                                'longitude': "None",
+                                'altitude': "None",
+                                'has_fix': "gps not connected"
+                            }
 
         try:
             # Read until we get valid data or timeout
@@ -78,7 +83,12 @@ class Telemetry:
                             return result
                 time.sleep(0.1)
 
-            return None
+            return {
+                                'latitude': "None",
+                                'longitude': "None",
+                                'altitude': "None",
+                                'has_fix': "None"
+                            }
 
         finally:
             gps.disconnect()
