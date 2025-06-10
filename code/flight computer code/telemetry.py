@@ -24,10 +24,10 @@ class Telemetry:
         self.battery_voltage = None
         self.gps_connection_port = gps_connection_port
         self.gps_data = {
-            'latitude': None,
-            'longitude': None,
-            'altitude': None,
-            'has_fix': False
+            'latitude': "None",
+            'longitude': "None",
+            'altitude': "None",
+            'has_fix': "None"
         }
     
     def get_telemetry(self):
