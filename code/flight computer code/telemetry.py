@@ -57,10 +57,10 @@ class Telemetry:
                         data = gps.get_position_data(msg)
                         if data:
                             result = {
-                                'latitude': None,
-                                'longitude': None,
-                                'altitude': None,
-                                'has_fix': False
+                                'latitude': "None",
+                                'longitude': "None",
+                                'altitude': "None",
+                                'has_fix': "None"
                             }
 
                             # Extract position data
