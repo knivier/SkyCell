@@ -2,8 +2,8 @@ import struct
 
 # Example: received raw payload (as bytes)
 # Replace this with your actual received data
-received_payload = b'\x2c\x0f\x27\x02\x03\xb3\x17\x2e\xfa\x00\x64\x01\x00\x3c\x05\x3c\x05'
-received_payload = b'\x00\x00\x00FF\x98\xff\x92A\x00\x00\x00\x00%U\x02'
+received_payload = b'\x2b\x00\x00\x00\x46\x46\x9b\xff\x92\x41\x05\x00\x00\x00\x26\x91\x08'
+
 
 # Ensure it matches expected length
 if len(received_payload) != 17:
