@@ -51,7 +51,7 @@ while run == True:
             portNum=1,
             priority=64
         )
-        print("Sent telemetry: ", telemetry_bytes)
+        print(telemetry_bytes)
     except Exception as e:
         print(f"Error sending telemetry message attempting reconection: {e}")
         mesh_node.close()
