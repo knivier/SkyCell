@@ -69,7 +69,7 @@ class Telemetry:
 
         # Pack into bytes (big endian, signed for lat/long)
         packed = struct.pack(
-            '>bHiiHbHH',  # format: > for big-endian, H for unsigned short (2 bytes), i for signed int (4 bytes), b for signed char (1 byte)
+            '>bHiiHbHb',  # format: > for big-endian, H for unsigned short (2 bytes), i for signed int (4 bytes), b for signed char (1 byte)
             cpu_temp_int, # 1bytes
             batv_int, # 2bytes
             lat_int, # 4bytes
