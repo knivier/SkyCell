@@ -1,1 +1,1 @@
-telemetry_packet: cput(42.538) batv(None) gps(None)
+telemetry_packet: cput(43.461) batv(None) gps(lat(46.055951) long(-71.92317383333334) alt(None) hasfix(None)) paknum(259)

@@ -3,6 +3,8 @@ import os
 import serial
 import pynmea2
 import time
+import struct
+
 
 def get_cpu_temp():
     try:
@@ -16,7 +18,14 @@ def get_battery_voltage():
     # Implement this function to read the actual battery voltage
     return 3.7  # Example value in volts
 
-
+def get_uptime():
+    try:
+        with open("/proc/uptime", "r") as f:
+            uptime_seconds = float(f.read().split()[0])
+            return uptime_seconds
+    except Exception as e:
+        print(f"Error reading uptime: {e}")
+        return 0.0  # Return 0 if unable to read uptime
 
 class Telemetry:
     def __init__(self, gps_connection_port="/dev/ttyS2"):
@@ -24,15 +33,57 @@ class Telemetry:
         self.battery_voltage = None
         self.gps_connection_port = gps_connection_port
         self.gps_data = {
-            'latitude': "None",
-            'longitude': "None",
-            'altitude': "None",
-            'has_fix': "None"
+            'latitude': 0.0,
+            'longitude': 0.0,
+            'altitude': 0.0,
+            'has_fix': False
         }
+        self.battery_voltage = 0.0
+        self.uptime = 0.0
     
-    def get_telemetry(self):
-        print(self.gps_data)
-        return f"telemetry_packet: cput({self.cpu_temp}) batv({self.battery_voltage}) gps(lat({self.gps_data['latitude']}) long({self.gps_data['longitude']}) alt({self.gps_data['altitude']}) hasfix({self.gps_data['has_fix']}))"
+    def get_telemetry(self, packet_number=0):
+        
+
+        # print log of all readings
+        try:
+            print(f"Cpu Temp: {self.cpu_temp} °C, Battery Voltage: {self.battery_voltage} V, "
+                f"GPS Latitude: {self.gps_data['latitude']}°N, "
+                f"GPS Longitude: {self.gps_data['longitude']}°E, "
+                f"GPS Altitude: {self.gps_data['altitude']} m, "
+                f"GPS Fix: {self.gps_data['has_fix']}, Uptime: {self.uptime} seconds, Packet Number: {packet_number}")
+        except Exception as e:
+            print(f"Error printing telemetry data: {e}")
+        
+
+
+
+        # transform data to integers for packing
+        cpu_temp_int = max(-128, min(127, int(self.cpu_temp)))
+        batv_int = max(0, min(65535, int(self.battery_voltage * 1000)))
+        lat_int = max(-2147483648, min(2147483647, int(self.gps_data['latitude'] * 1e5)))
+        long_int = max(-2147483648, min(2147483647, int(self.gps_data['longitude'] * 1e5)))
+        alt_int = max(0, min(65535, int(self.gps_data['altitude'])))
+        has_fix_int = 1 if self.gps_data['has_fix'] else 0
+        uptime_int = max(0, min(65535, int(self.uptime)))
+        packet_number_int = max(0, min(127, int(packet_number)))
+
+        # Pack into bytes (big endian, signed for lat/long)
+        packed = struct.pack(
+            '>bHiiHbHH',  # format: > for big-endian, H for unsigned short (2 bytes), i for signed int (4 bytes), b for signed char (1 byte)
+            cpu_temp_int, # 1bytes
+            batv_int, # 2bytes
+            lat_int, # 4bytes
+            long_int, # 4bytes
+            alt_int, # 2bytes
+            has_fix_int, # 1byte
+            uptime_int, # 2bytes
+            packet_number_int  # 1 bytes total: 17 bytes
+        )
+
+        # Convert to hex string for transmission
+        telemetry_hex_string = packed.hex()
+        
+        return telemetry_hex_string
            
         
         
@@ -41,14 +92,14 @@ class Telemetry:
     def get_gps_data(self):
     
         # Initialize GPS reader - adjust port as needed
-        gps = GPSReader(port=self.gps_connection_port, baudrate=9600)
+        gps = GPSReader(port=self.gps_connection_port, baudrate=9600) 
 
         if not gps.connect():
             return {
-                                'latitude': "None",
-                                'longitude': "None",
-                                'altitude': "None",
-                                'has_fix': "gps not connected"
+                                'latitude': 0.0,
+                                'longitude': 0.0,
+                                'altitude': 0.0,
+                                'has_fix': False
                             }
 
         try:
@@ -62,10 +113,10 @@ class Telemetry:
                         data = gps.get_position_data(msg)
                         if data:
                             result = {
-                                'latitude': "None",
-                                'longitude': "None",
-                                'altitude': "None",
-                                'has_fix': "None"
+                                'latitude': 0.0,
+                                'longitude': 0.0,
+                                'altitude': 0.0,
+                                'has_fix': False
                             }
 
                             # Extract position data
@@ -84,10 +135,10 @@ class Telemetry:
                 time.sleep(0.1)
 
             return {
-                                'latitude': "None",
-                                'longitude': "None",
-                                'altitude': "None",
-                                'has_fix': "None"
+                                'latitude': 0.0,
+                                'longitude': 0.0,
+                                'altitude': 0.0,
+                                'has_fix': False
                             }
 
         finally:
@@ -96,7 +147,7 @@ class Telemetry:
     def update_telemetry(self):
         self.cpu_temp = get_cpu_temp()
         self.gps_data = self.get_gps_data()  # Placeholder for GPS coordinates
-
+        self.uptime = get_uptime()
         #self.battery_voltage = get
         #self.battery_voltage = get_battery_voltage()  # Implement this function if needed
         #self.battery_percentage = get_battery_percentage()  # Implement this function if needed

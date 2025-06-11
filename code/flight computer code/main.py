@@ -13,7 +13,7 @@ print("\nConnected to Meshtastic interface\n")
 
 
 def send_message(message):
-    mesh_node.sendText(
+    mesh_node.sendData(
         text=message,
         wantAck=False # CHECK REGION SETTINGS AND ADJUST FOR NOSE TOLERANCE
         
@@ -24,6 +24,8 @@ packet_number = 0
 while run == True:
 
     packet_number+=1
+    if packet_number > 127:
+        packet_number = 0
     telemetry = Telemetry()
     
     
@@ -33,31 +35,24 @@ while run == True:
         telemetry.update_telemetry()
     except Exception as e:
         print(f"Error updating telemetry: {e}")
-    
-    telemetry_data = telemetry.get_telemetry()
-    print("Telemetry data: ", telemetry_data)
-    
     try:
-        tx_telemetry = str(telemetry_data + f" paknum({packet_number})")
-        print("Telemetry string: ", tx_telemetry)
+        telemetry_data = telemetry.get_telemetry(packet_number=packet_number)
     except Exception as e:
-        print(f"Error converting telemetry data to string: {e}") # TX VIA COMMAND REMEMBER AND CHEC OR CHECK IF ITS NOT BECAUSE OF " AND " OR ' IN JSON DICTIONARY
-        tx_telemetry = "Error in telemetry data"
+        print(f"Error getting telemetry data: {e}")
+
     
     try:
-        '''
-        # Method 1: Using subprocess.run (recommended)
-        cmd = f'meshtastic --sendtext "{tx_telemetry}"'
-        result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
-        if result.returncode == 0:
-            print("Sent telemetry:", tx_telemetry)
-        else:
-            print("Error sending telemetry:", result.stderr)'''
-        send_message(tx_telemetry)
+        
+        mesh_node.sendData(
+            data=telemetry_data,
+            wantAck=False,  # Adjust based on your requirements
+            portNum=1,  # Adjust port number as needed
+            priority=64
+        )
         #send_message("this is a telemetry message with a lot of numbers and letter : " + str(i))
         # run terminal command meshtastic --sentext "tx_telemetry"
 
-        print("Sent telemetry: ", tx_telemetry)
+        print("Sent telemetry: ", telemetry_data)
     except Exception as e:
         print(f"Error sending telemetry message attempting reconection: {e}")
         mesh_node.close()

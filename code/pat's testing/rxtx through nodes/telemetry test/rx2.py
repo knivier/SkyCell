@@ -5,7 +5,7 @@ import os
 import json
 import ast
 
-interface = meshtastic.serial_interface.SerialInterface("/dev/ttyUSB0")
+interface = meshtastic.serial_interface.SerialInterface("/dev/ttyUSB1")
 interface.frequency = int(915e6)  # Replace with your desired frequency
 print("Connected to Meshtastic interface\n")
 
@@ -23,7 +23,7 @@ def onReceive(packet, interface):
                 message_string.startswith('{') or 
                 message_string.startswith("'")):
                 
-                print(f"Potential telemetry data: {message_string}")
+                print(f"Potential telemetry data: {message_string}") 
                 write_telemetry(message_string)
             else:
                 print("Not a telemetry message")
