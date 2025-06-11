@@ -52,6 +52,9 @@ while run == True:
             priority=64
         )
         print(telemetry_bytes)
+        print("Raw packed bytes:", [hex(b) for b in telemetry_bytes])
+        print("Hex string:", telemetry_data)
+        
     except Exception as e:
         print(f"Error sending telemetry message attempting reconection: {e}")
         mesh_node.close()
