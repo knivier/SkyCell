@@ -2072,3 +2072,4 @@ telemetry_packet: cput(43.461) batv(None) gps(lat(46.055919333333335) long(-71.9
 telemetry_packet: cput(43.461) batv(None) gps(lat(46.05592983333333) long(-71.923166) alt(None) hasfix(None)) paknum(257)
 telemetry_packet: cput(43.461) batv(None) gps(lat(46.05593283333334) long(-71.9231735) alt(None) hasfix(None)) paknum(258)
 telemetry_packet: cput(43.461) batv(None) gps(lat(46.055951) long(-71.92317383333334) alt(None) hasfix(None)) paknum(259)
+telemetry_packet: cput(46.23) batv(None) gps(lat(46.055911333333334) long(-71.92320233333334) alt(None) hasfix(None)) paknum(1)

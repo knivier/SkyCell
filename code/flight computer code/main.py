@@ -43,16 +43,15 @@ while run == True:
     
     try:
         
+        telemetry_bytes = bytes.fromhex(telemetry_data)
+        
         mesh_node.sendData(
-            data=telemetry_data,
-            wantAck=False,  # Adjust based on your requirements
-            portNum=1,  # Adjust port number as needed
+            data=telemetry_bytes,  # Send bytes instead of hex string
+            wantAck=False,
+            portNum=1,
             priority=64
         )
-        #send_message("this is a telemetry message with a lot of numbers and letter : " + str(i))
-        # run terminal command meshtastic --sentext "tx_telemetry"
-
-        print("Sent telemetry: ", telemetry_data)
+        print("Sent telemetry: ", telemetry_bytes)
     except Exception as e:
         print(f"Error sending telemetry message attempting reconection: {e}")
         mesh_node.close()

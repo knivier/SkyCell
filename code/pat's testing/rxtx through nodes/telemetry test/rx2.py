@@ -5,7 +5,7 @@ import os
 import json
 import ast
 
-interface = meshtastic.serial_interface.SerialInterface("/dev/ttyUSB1")
+interface = meshtastic.serial_interface.SerialInterface("/dev/ttyUSB0")
 interface.frequency = int(915e6)  # Replace with your desired frequency
 print("Connected to Meshtastic interface\n")
 
