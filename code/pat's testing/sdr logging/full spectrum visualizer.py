@@ -4,7 +4,7 @@ import os
 import re
 
 # --- Config ---
-directory = "/home/patcybermind/Documents/hcprojects/apex/SkyCell/iq_data"
+directory = "/home/patcybermind/Documents/hcprojects/apex/SkyCell/iq_data_1:39_jun13"
 sample_rate = 2.4e6  # Hz
 fft_size = 4096
 overlap = 0.5
@@ -50,9 +50,15 @@ for i, filename in enumerate(files):
 
     avg_power /= segments
     power_db = 10 * np.log10(avg_power + 1e-12)
+
+    # --- Remove DC bin ---
+    dc_index = fft_size // 2
+    # Simple fix: interpolate using neighbors
+    power_db[dc_index] = (power_db[dc_index - 1] + power_db[dc_index + 1]) / 2
+
     freq_axis = np.fft.fftshift(np.fft.fftfreq(fft_size, 1/sample_rate)) / 1e6 + freq_mhz
 
-    # Trim 0.2 MHz from both ends to remove overlap (except at spectrum edges)
+    # Trim 0.2 MHz from both ends to avoid overlap
     if i == 0:
         keep = freq_axis <= (freq_mhz + 1.2)
     elif i == len(files) - 1:
@@ -70,7 +76,7 @@ final_power = np.concatenate(full_power)
 # --- Plot ---
 plt.figure(figsize=(16, 6))
 plt.plot(final_freq, final_power, linewidth=0.8)
-plt.title("Wideband Spectrum (Stitched from Multiple IQ Files)")
+plt.title("Wideband Spectrum (Stitched, DC Notched)")
 plt.xlabel("Frequency (MHz)")
 plt.ylabel("Power (dB)")
 plt.grid(True)

@@ -1,4 +1,5 @@
 code/.vscode/launch.json
 .venv
-iq_data/
+
 code/flight\ computer\ code/__pycache__/
+iq_data*/
