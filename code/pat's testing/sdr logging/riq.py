@@ -14,6 +14,9 @@ output_dir = "iq_data"
 
 os.makedirs(output_dir, exist_ok=True)
 
+print(f"[+] Starting sweep from {start_freq / 1_000_000:.3f} MHz to {end_freq / 1_000_000:.3f} MHz with step {step_freq / 1_000_000:.3f} MHz")
+
+
 for freq in range(start_freq, end_freq + 1, step_freq):
     out_file = os.path.join(output_dir, f"iq_{freq//1_000_000}MHz.iq")
     print(f"[+] Capturing {freq / 1_000_000:.3f} MHz -> {out_file}")
@@ -29,6 +32,7 @@ for freq in range(start_freq, end_freq + 1, step_freq):
 
     try:
         subprocess.run(cmd, check=True)
+        print(f"[✓] Successfully captured {freq / 1_000_000:.3f} MHz")
     except subprocess.CalledProcessError as e:
         print(f"[!] rtl_sdr failed at {freq} Hz: {e}")
     

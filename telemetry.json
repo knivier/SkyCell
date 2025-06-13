@@ -1,1 +1,10 @@
-telemetry_packet: cput(46.23) batv(None) gps(lat(46.055911333333334) long(-71.92320233333334) alt(None) hasfix(None)) paknum(1)
+{
+    "cpu_temp": 48,
+    "battery_voltage": 0.0,
+    "latitude": 46.05587,
+    "longitude": -71.92316,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 15169,
+    "packet_number": 35
+}

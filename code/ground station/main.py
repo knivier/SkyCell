@@ -1,42 +1,169 @@
 import struct
+import json
+import os
+
+
+import meshtastic.serial_interface
+from pubsub import pub
+import time
+import os
+import json
+import ast
 
 # Example: received raw payload (as bytes)
 # Replace this with your actual received data
-received_payload = b'\x2b\x00\x00\x00\x46\x46\x9b\xff\x92\x41\x05\x00\x00\x00\x26\x91\x08'
+#received_payload = b'\x2b\x00\x00\x00\x46\x46\x9b\xff\x92\x41\x05\x00\x00\x00\x26\x91\x08'
 
 
 # Ensure it matches expected length
-if len(received_payload) != 17:
-    print("Invalid packet length:", len(received_payload))
-else:
-    # Unpack the data
-    (
-        cpu_temp_int,
-        batv_int,
-        lat_int,
-        long_int,
-        alt_int,
-        has_fix_int,
-        uptime_int,
-        packet_number_int
-    ) = struct.unpack('>bHiiHbHb', received_payload)
+def unpack_payload(received_payload):
+    if len(received_payload) != 17:
+        print("Invalid packet length:", len(received_payload))
+    else:
+        # Unpack the data
+        (
+            cpu_temp_int,
+            batv_int,
+            lat_int,
+            long_int,
+            alt_int,
+            has_fix_int,
+            uptime_int,
+            packet_number_int
+        ) = struct.unpack('>bHiiHbHb', received_payload)
 
-    # Convert back to usable units
-    cpu_temp = cpu_temp_int
-    battery_voltage = batv_int / 1000.0
-    latitude = lat_int / 1e5
-    longitude = long_int / 1e5
-    altitude = alt_int
-    has_fix = bool(has_fix_int)
-    uptime = uptime_int
-    packet_number = packet_number_int
+        # Convert back to usable units
+        cpu_temp = cpu_temp_int
+        battery_voltage = batv_int / 1000.0
+        latitude = lat_int / 1e5
+        longitude = long_int / 1e5
+        altitude = alt_int
+        has_fix = bool(has_fix_int)
+        uptime = uptime_int
+        packet_number = packet_number_int
 
-    # Display results
-    print("CPU Temp:", cpu_temp, "°C")
-    print("Battery Voltage:", battery_voltage, "V")
-    print("Latitude:", latitude)
-    print("Longitude:", longitude)
-    print("Altitude:", altitude, "m")
-    print("Has GPS Fix:", has_fix)
-    print("Uptime:", uptime, "s")
-    print("Packet Number:", packet_number)
+        # Display results
+        print("CPU Temp:", cpu_temp, "°C")
+        print("Battery Voltage:", battery_voltage, "V")
+        print("Latitude:", latitude)
+        print("Longitude:", longitude)
+        print("Altitude:", altitude, "m")
+        print("Has GPS Fix:", has_fix)
+        print("Uptime:", uptime, "s")
+        print("Packet Number:", packet_number)
+
+        # convert to json
+        telemetry_data = {
+            "cpu_temp": cpu_temp,
+            "battery_voltage": battery_voltage,
+            "latitude": latitude,
+            "longitude": longitude,
+            "altitude": altitude,
+            "has_fix": has_fix,
+            "uptime": uptime,
+            "packet_number": packet_number
+        }
+
+
+        telemetry_json = json.dumps(telemetry_data, indent=4)
+        print("Telemetry JSON:", telemetry_json)
+        # Write to telemetry.json
+        with open("telemetry.json", 'w') as f:
+            f.write(telemetry_json)
+            f.flush()
+            os.fsync(f.fileno())
+        print("Telemetry data written to telemetry.json")
+        # Write to telemetry_log.json
+        with open("telemetry_log.json", 'a') as f:
+            f.write(telemetry_json + '\n')
+            f.flush()
+            os.fsync(f.fileno())
+        print("Telemetry data appended to telemetry_log.json")
+
+
+
+
+
+
+
+interface = meshtastic.serial_interface.SerialInterface("/dev/ttyUSB0")
+interface.frequency = int(915e6)  # Replace with your desired frequency
+print("Connected to Meshtastic interface\n")
+
+def onReceive(packet, interface):
+    print(f"Raw packet received: {packet}")  # Debug: see the full packet structure
+    
+        # Extract only the decoded payload from the packet
+    if 'decoded' in packet and 'payload' in packet['decoded']:
+        payload = packet['decoded']['payload']
+        unpack_payload(payload)
+    else:
+        print("Error: Packet does not contain decoded payload")
+
+# Subscribe to all message types to see what we're actually receiving
+pub.subscribe(onReceive, 'meshtastic.receive.text')
+# Also try subscribing to telemetry specifically
+pub.subscribe(onReceive, 'meshtastic.receive.telemetry')
+
+def write_telemetry(telemetry):
+    print(f"write_telemetry called with: {repr(telemetry)}")
+    
+    # Show current working directory
+    current_dir = os.getcwd()
+    print(f"📁 Current working directory: {current_dir}")
+    
+    # Always write to files, regardless of JSON conversion success
+    try:
+        # Append to log file
+        log_file_path = os.path.abspath("telemetry_log.json")
+        with open("telemetry_log.json", 'a') as tl:
+            tl.write(telemetry + '\n')
+            tl.flush()
+            os.fsync(tl.fileno())
+        print(f"✅ Telemetry data appended to log file: {log_file_path}")
+        print(f"📏 Log file size: {os.path.getsize('telemetry_log.json')} bytes")
+        
+        # Write to current telemetry file
+        telemetry_file_path = os.path.abspath("telemetry.json")
+        with open("telemetry.json", 'w') as t:
+            t.write(telemetry)
+            t.flush()
+            os.fsync(t.fileno())
+        print(f"✅ Telemetry data written to: {telemetry_file_path}")
+        print(f"📏 Telemetry file size: {os.path.getsize('telemetry.json')} bytes")
+        
+    except Exception as e:
+        print(f"❌ Failed to write to files: {e}")
+        return
+    
+    # Try to parse and pretty-print JSON (optional, doesn't affect file writing)
+    try:
+        if telemetry.startswith("'"):
+            # Handle single quotes
+            telemetry_dict = ast.literal_eval(telemetry)
+        else:
+            # Handle double quotes
+            telemetry_dict = json.loads(telemetry)
+        
+        telemetry_json = json.dumps(telemetry_dict, indent=2)
+        print("✅ Telemetry data converted to JSON:", telemetry_json)
+        
+        # Write pretty JSON to a separate file
+        pretty_file_path = os.path.abspath("telemetry_pretty.json")
+        with open("telemetry_pretty.json", 'w') as tp:
+            tp.write(telemetry_json)
+            tp.flush()
+            os.fsync(tp.fileno())
+        print(f"✅ Pretty JSON written to: {pretty_file_path}")
+        print(f"📏 Pretty file size: {os.path.getsize('telemetry_pretty.json')} bytes")
+        
+    except Exception as e:
+        print(f"⚠️  Could not parse as JSON (but files were still written): {e}")
+
+print("Listening for messages... Press Ctrl+C to stop")
+try:
+    while True:
+        time.sleep(1)
+except KeyboardInterrupt:
+    print("\nShutting down...")
+    interface.close()
