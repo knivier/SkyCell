@@ -4,9 +4,9 @@ import os
 import re
 
 # --- Config ---
-directory = "/home/patcybermind/Documents/hcprojects/apex/SkyCell/iq_data_1:39_jun13"
+directory = "/home/patcybermind/Documents/hcprojects/apex/SkyCell/iq_data_1:39_jun13" # DONT FORGET TO COMPENSATE FOR GAIN
 sample_rate = 2.4e6  # Hz
-fft_size = 4096
+fft_size = 4096*4
 overlap = 0.5
 step_hz = 2e6  # center frequency step (not sample rate)
 
@@ -74,11 +74,26 @@ final_freq = np.concatenate(full_freq)
 final_power = np.concatenate(full_power)
 
 # --- Plot ---
-plt.figure(figsize=(16, 6))
-plt.plot(final_freq, final_power, linewidth=0.8)
-plt.title("Wideband Spectrum (Stitched, DC Notched)")
-plt.xlabel("Frequency (MHz)")
-plt.ylabel("Power (dB)")
-plt.grid(True)
-plt.tight_layout()
-plt.show()
+import plotly.graph_objects as go
+
+fig = go.Figure()
+fig.add_trace(go.Scatter(
+    x=final_freq,
+    y=final_power,
+    mode='lines',
+    line=dict(width=1),
+    name="Spectrum"
+))
+
+fig.update_layout(
+    title="Wideband Spectrum (Zoomable)",
+    xaxis_title="Frequency (MHz)",
+    yaxis_title="Power (dB)",
+    hovermode="x unified",
+    template="plotly_dark",  # or "plotly_white"
+    margin=dict(l=40, r=40, t=40, b=40),
+    height=600
+)
+
+fig.show()
+

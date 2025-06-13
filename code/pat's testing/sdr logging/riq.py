@@ -9,7 +9,7 @@ step_freq = 2_000_000         # 2.4 MHz (max sample rate of RTL-SDR)
 sample_rate = 2_400_000       # 2.4 MSPS
 duration_sec = 0.1            # 100 ms
 samples = int(sample_rate * duration_sec)
-gain = 0                     # Adjust as needed
+gain = 0                     # Adjust as needed TODO: ADJUST GAIN TO SEE NOISE FLOOR BETTER
 output_dir = "iq_data"
 
 os.makedirs(output_dir, exist_ok=True)
