@@ -78,7 +78,8 @@ def log_sweep_number_uptime(sweep_number, uptime):
 #run_sweep()  # Initial sweep to start with
 print("ran sdr sweep number: ", get_current_sweep_number())
 log_sweep_number_uptime(get_current_sweep_number(), get_uptime())
-write_sweep_number(get_current_sweep_number()+1) 
+new_sweep_number = get_current_sweep_number() + 1
+write_sweep_number(new_sweep_number) 
 
 
 interval_seconds = 10  # Run sweeps every 100 seconds
@@ -95,9 +96,10 @@ while True:
         
     
     log_sweep_number_uptime(get_current_sweep_number(), get_uptime())
-    write_sweep_number(get_current_sweep_number()+1) 
+    new_sweep_number = get_current_sweep_number() + 1
+    write_sweep_number(new_sweep_number) 
 
-    print(f"✅ Sweep completed. Uptime: {get_uptime()} seconds")
+    print(f"✅ Sweep completed. Uptime: {get_uptime()} seconds") # TODO: FIX INCREMENT NOT INCREMENTING
 
     
     
