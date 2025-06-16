@@ -3,8 +3,11 @@ import subprocess
 import time
 
 def write_sweep_number(sweep_number):
-    with open("last_sweep_number.txt", "w") as f:
-        f.write(str(sweep_number))
+    try:
+        with open("last_sweep_number.txt", "w") as f:
+            f.write(str(sweep_number))
+    except Exception as e:
+        print(f"Error writing sweep number: {e}")
 
 
 def run_sweep():
@@ -46,11 +49,15 @@ def run_sweep():
     print("[✓] Sweep complete.")
 
 def get_current_sweep_number():
-    with open("last_sweep_number.txt", "r") as f:
-        last_sweep_number = f.read().strip()
-    if not last_sweep_number:
-        last_sweep_number = 0
-    return int(last_sweep_number)
+    try:
+        with open("last_sweep_number.txt", "r") as f:
+            last_sweep_number = f.read().strip()
+        if not last_sweep_number:
+            last_sweep_number = 0
+        return int(last_sweep_number)
+    except Exception as e:
+        print(f"Error reading last sweep number: {e}")
+        return 0
 
 def get_uptime():
     try:
@@ -62,19 +69,30 @@ def get_uptime():
         return "3737"
 
 def log_sweep_number_uptime(sweep_number, uptime):
-    with open("sweep_log.txt", "a") as log_file:
-        log_file.write(f"Sweep Number: {sweep_number}, Uptime: {uptime} seconds\n")
+    try:
+        with open("sweep_log.txt", "a") as log_file:
+            log_file.write(f"Sweep Number: {sweep_number}, Uptime: {uptime} seconds\n")
+    except Exception as e:
+        print(f"Error logging sweep number and uptime: {e}")
 
 #run_sweep()  # Initial sweep to start with
 print("ran sdr sweep number: ", get_current_sweep_number())
+log_sweep_number_uptime(get_current_sweep_number(), get_uptime())
+write_sweep_number(get_current_sweep_number()+1) 
+
 
 interval_seconds = 10  # Run sweeps every 100 seconds
 while True:
-    for i in range(1, interval_seconds):  # Run sweeps every 100 seconds
-        time.sleep(1)  # Keep the script running
+    for i in range(0, interval_seconds):  
+        time.sleep(1)  
 
     print(f"Running sweep number: {get_current_sweep_number()} uptime: {get_uptime()} seconds")
-    #run_sweep(get_current_sweep_number)  # Run the sweep
+    try:
+        #run_sweep(get_current_sweep_number)  # Run the sweep
+        continue 
+    except Exception as e:
+        print(f"Error during sweep: {e}")
+        
     
     log_sweep_number_uptime(get_current_sweep_number(), get_uptime())
     write_sweep_number(get_current_sweep_number()+1) 
