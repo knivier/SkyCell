@@ -86,7 +86,7 @@ def unpack_payload(received_payload):
 
 
 
-interface = meshtastic.serial_interface.SerialInterface("/dev/ttyUSB0")
+interface = meshtastic.serial_interface.SerialInterface("COM13") # PORT
 interface.frequency = int(915e6)  # Replace with your desired frequency
 print("Connected to Meshtastic interface\n")
 

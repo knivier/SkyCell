@@ -1,10 +1,10 @@
 {
-    "cpu_temp": 48,
+    "cpu_temp": 37,
     "battery_voltage": 0.0,
-    "latitude": 46.05587,
-    "longitude": -71.92316,
+    "latitude": 0.0,
+    "longitude": 0.0,
     "altitude": 0,
     "has_fix": false,
-    "uptime": 15169,
-    "packet_number": 35
+    "uptime": 623,
+    "packet_number": 16
 }

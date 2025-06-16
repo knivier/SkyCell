@@ -7853,3 +7853,4193 @@ telemetry_packet: cput(46.23) batv(None) gps(lat(46.055911333333334) long(-71.92
     "uptime": 15169,
     "packet_number": 35
 }
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1361,
+    "packet_number": 54
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1376,
+    "packet_number": 55
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1392,
+    "packet_number": 56
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1408,
+    "packet_number": 57
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1424,
+    "packet_number": 58
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1440,
+    "packet_number": 59
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1456,
+    "packet_number": 60
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1472,
+    "packet_number": 61
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1489,
+    "packet_number": 62
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1505,
+    "packet_number": 63
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1522,
+    "packet_number": 64
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1537,
+    "packet_number": 65
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1554,
+    "packet_number": 66
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1570,
+    "packet_number": 67
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1586,
+    "packet_number": 68
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1602,
+    "packet_number": 69
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1617,
+    "packet_number": 70
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1633,
+    "packet_number": 71
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1649,
+    "packet_number": 72
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1665,
+    "packet_number": 73
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1681,
+    "packet_number": 74
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1697,
+    "packet_number": 75
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1713,
+    "packet_number": 76
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1728,
+    "packet_number": 77
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1744,
+    "packet_number": 78
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1759,
+    "packet_number": 79
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1779,
+    "packet_number": 80
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1795,
+    "packet_number": 81
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1811,
+    "packet_number": 82
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1827,
+    "packet_number": 83
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1843,
+    "packet_number": 84
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1859,
+    "packet_number": 85
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1875,
+    "packet_number": 86
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1890,
+    "packet_number": 87
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1906,
+    "packet_number": 88
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1921,
+    "packet_number": 89
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1941,
+    "packet_number": 90
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1957,
+    "packet_number": 91
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1973,
+    "packet_number": 92
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1988,
+    "packet_number": 93
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2004,
+    "packet_number": 94
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2020,
+    "packet_number": 95
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2035,
+    "packet_number": 96
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2051,
+    "packet_number": 97
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2067,
+    "packet_number": 98
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2083,
+    "packet_number": 99
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2099,
+    "packet_number": 100
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2115,
+    "packet_number": 101
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2131,
+    "packet_number": 102
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2147,
+    "packet_number": 103
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2163,
+    "packet_number": 104
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2178,
+    "packet_number": 105
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2194,
+    "packet_number": 106
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2210,
+    "packet_number": 107
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2225,
+    "packet_number": 108
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2241,
+    "packet_number": 109
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2256,
+    "packet_number": 110
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2272,
+    "packet_number": 111
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2288,
+    "packet_number": 112
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2306,
+    "packet_number": 113
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2321,
+    "packet_number": 114
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2337,
+    "packet_number": 115
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2353,
+    "packet_number": 116
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2369,
+    "packet_number": 117
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2384,
+    "packet_number": 118
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2400,
+    "packet_number": 119
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2416,
+    "packet_number": 120
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2431,
+    "packet_number": 121
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2447,
+    "packet_number": 122
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2462,
+    "packet_number": 123
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2482,
+    "packet_number": 124
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2497,
+    "packet_number": 125
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2513,
+    "packet_number": 126
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2528,
+    "packet_number": 127
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2544,
+    "packet_number": 0
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2559,
+    "packet_number": 1
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2575,
+    "packet_number": 2
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2591,
+    "packet_number": 3
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2606,
+    "packet_number": 4
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2622,
+    "packet_number": 5
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2637,
+    "packet_number": 6
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2657,
+    "packet_number": 7
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2672,
+    "packet_number": 8
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2688,
+    "packet_number": 9
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2703,
+    "packet_number": 10
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2720,
+    "packet_number": 11
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2740,
+    "packet_number": 12
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2755,
+    "packet_number": 13
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2771,
+    "packet_number": 14
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2786,
+    "packet_number": 15
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2805,
+    "packet_number": 16
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2821,
+    "packet_number": 17
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 2837,
+    "packet_number": 18
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3239,
+    "packet_number": 43
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3254,
+    "packet_number": 44
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3270,
+    "packet_number": 45
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3286,
+    "packet_number": 46
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3306,
+    "packet_number": 47
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3322,
+    "packet_number": 48
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3338,
+    "packet_number": 49
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3353,
+    "packet_number": 50
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3369,
+    "packet_number": 51
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3385,
+    "packet_number": 52
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3401,
+    "packet_number": 53
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3417,
+    "packet_number": 54
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3432,
+    "packet_number": 55
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3448,
+    "packet_number": 56
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3463,
+    "packet_number": 57
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3483,
+    "packet_number": 58
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3504,
+    "packet_number": 59
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3520,
+    "packet_number": 60
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3535,
+    "packet_number": 61
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3551,
+    "packet_number": 62
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3567,
+    "packet_number": 63
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3588,
+    "packet_number": 64
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3603,
+    "packet_number": 65
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3619,
+    "packet_number": 66
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3635,
+    "packet_number": 67
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3650,
+    "packet_number": 68
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3666,
+    "packet_number": 69
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3681,
+    "packet_number": 70
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3697,
+    "packet_number": 71
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3713,
+    "packet_number": 72
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3729,
+    "packet_number": 73
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3744,
+    "packet_number": 74
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3760,
+    "packet_number": 75
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3776,
+    "packet_number": 76
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3792,
+    "packet_number": 77
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3807,
+    "packet_number": 78
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3823,
+    "packet_number": 79
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3839,
+    "packet_number": 80
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3855,
+    "packet_number": 81
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3871,
+    "packet_number": 82
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3887,
+    "packet_number": 83
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3903,
+    "packet_number": 84
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3919,
+    "packet_number": 85
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3935,
+    "packet_number": 86
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3955,
+    "packet_number": 87
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3971,
+    "packet_number": 88
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3987,
+    "packet_number": 89
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4003,
+    "packet_number": 90
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4019,
+    "packet_number": 91
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4034,
+    "packet_number": 92
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4050,
+    "packet_number": 93
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4065,
+    "packet_number": 94
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4081,
+    "packet_number": 95
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4097,
+    "packet_number": 96
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4112,
+    "packet_number": 97
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4128,
+    "packet_number": 98
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4144,
+    "packet_number": 99
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4159,
+    "packet_number": 100
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4175,
+    "packet_number": 101
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4191,
+    "packet_number": 102
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4207,
+    "packet_number": 103
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4223,
+    "packet_number": 104
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4239,
+    "packet_number": 105
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4255,
+    "packet_number": 106
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4275,
+    "packet_number": 107
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4291,
+    "packet_number": 108
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4307,
+    "packet_number": 109
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4323,
+    "packet_number": 110
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4339,
+    "packet_number": 111
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4355,
+    "packet_number": 112
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4370,
+    "packet_number": 113
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4390,
+    "packet_number": 114
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4406,
+    "packet_number": 115
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4422,
+    "packet_number": 116
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4438,
+    "packet_number": 117
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4453,
+    "packet_number": 118
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4469,
+    "packet_number": 119
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4485,
+    "packet_number": 120
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4501,
+    "packet_number": 121
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4517,
+    "packet_number": 122
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4533,
+    "packet_number": 123
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4549,
+    "packet_number": 124
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4570,
+    "packet_number": 125
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4586,
+    "packet_number": 126
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4602,
+    "packet_number": 127
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4617,
+    "packet_number": 0
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4633,
+    "packet_number": 1
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4649,
+    "packet_number": 2
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4664,
+    "packet_number": 3
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4680,
+    "packet_number": 4
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4695,
+    "packet_number": 5
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4715,
+    "packet_number": 6
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4731,
+    "packet_number": 7
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4747,
+    "packet_number": 8
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4763,
+    "packet_number": 9
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4778,
+    "packet_number": 10
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4794,
+    "packet_number": 11
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4809,
+    "packet_number": 12
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4825,
+    "packet_number": 13
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4841,
+    "packet_number": 14
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4857,
+    "packet_number": 15
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4873,
+    "packet_number": 16
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4889,
+    "packet_number": 17
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4905,
+    "packet_number": 18
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4920,
+    "packet_number": 19
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4936,
+    "packet_number": 20
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4951,
+    "packet_number": 21
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4967,
+    "packet_number": 22
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 4987,
+    "packet_number": 23
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5003,
+    "packet_number": 24
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5018,
+    "packet_number": 25
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5034,
+    "packet_number": 26
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5050,
+    "packet_number": 27
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5065,
+    "packet_number": 28
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5085,
+    "packet_number": 29
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5101,
+    "packet_number": 30
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5117,
+    "packet_number": 31
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5133,
+    "packet_number": 32
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5148,
+    "packet_number": 33
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5167,
+    "packet_number": 34
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5183,
+    "packet_number": 35
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5199,
+    "packet_number": 36
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5214,
+    "packet_number": 37
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5230,
+    "packet_number": 38
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5245,
+    "packet_number": 39
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5261,
+    "packet_number": 40
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5276,
+    "packet_number": 41
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5292,
+    "packet_number": 42
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5308,
+    "packet_number": 43
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5324,
+    "packet_number": 44
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5340,
+    "packet_number": 45
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5356,
+    "packet_number": 46
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5371,
+    "packet_number": 47
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5391,
+    "packet_number": 48
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5407,
+    "packet_number": 49
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5423,
+    "packet_number": 50
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5438,
+    "packet_number": 51
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5454,
+    "packet_number": 52
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5469,
+    "packet_number": 53
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5485,
+    "packet_number": 54
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5501,
+    "packet_number": 55
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5517,
+    "packet_number": 56
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5532,
+    "packet_number": 57
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5548,
+    "packet_number": 58
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5564,
+    "packet_number": 59
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5579,
+    "packet_number": 60
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5595,
+    "packet_number": 61
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5610,
+    "packet_number": 62
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5629,
+    "packet_number": 63
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5645,
+    "packet_number": 64
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5660,
+    "packet_number": 65
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5676,
+    "packet_number": 66
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5692,
+    "packet_number": 67
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5707,
+    "packet_number": 68
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5723,
+    "packet_number": 69
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5738,
+    "packet_number": 70
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5754,
+    "packet_number": 71
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5770,
+    "packet_number": 72
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5785,
+    "packet_number": 73
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5801,
+    "packet_number": 74
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5816,
+    "packet_number": 75
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5832,
+    "packet_number": 76
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5848,
+    "packet_number": 77
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5863,
+    "packet_number": 78
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5883,
+    "packet_number": 79
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5899,
+    "packet_number": 80
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5915,
+    "packet_number": 81
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5930,
+    "packet_number": 82
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5946,
+    "packet_number": 83
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5961,
+    "packet_number": 84
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5977,
+    "packet_number": 85
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5993,
+    "packet_number": 86
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6009,
+    "packet_number": 87
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6024,
+    "packet_number": 88
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6040,
+    "packet_number": 89
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6055,
+    "packet_number": 90
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06503,
+    "longitude": -71.9656,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6071,
+    "packet_number": 91
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06504,
+    "longitude": -71.96556,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6086,
+    "packet_number": 92
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06506,
+    "longitude": -71.96554,
+    "altitude": 123,
+    "has_fix": true,
+    "uptime": 6102,
+    "packet_number": 93
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06505,
+    "longitude": -71.96558,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6118,
+    "packet_number": 94
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6134,
+    "packet_number": 95
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6149,
+    "packet_number": 96
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6165,
+    "packet_number": 97
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6185,
+    "packet_number": 98
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06503,
+    "longitude": -71.96549,
+    "altitude": 125,
+    "has_fix": true,
+    "uptime": 6201,
+    "packet_number": 99
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06506,
+    "longitude": -71.96553,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6217,
+    "packet_number": 100
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06506,
+    "longitude": -71.96543,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6232,
+    "packet_number": 101
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06505,
+    "longitude": -71.96538,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6248,
+    "packet_number": 102
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06503,
+    "longitude": -71.96532,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6263,
+    "packet_number": 103
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06502,
+    "longitude": -71.9653,
+    "altitude": 129,
+    "has_fix": true,
+    "uptime": 6282,
+    "packet_number": 104
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06501,
+    "longitude": -71.96537,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6298,
+    "packet_number": 105
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06502,
+    "longitude": -71.96535,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6313,
+    "packet_number": 106
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06504,
+    "longitude": -71.96549,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6329,
+    "packet_number": 107
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06504,
+    "longitude": -71.96561,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6344,
+    "packet_number": 108
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06494,
+    "longitude": -71.96553,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6360,
+    "packet_number": 109
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.0649,
+    "longitude": -71.96542,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6375,
+    "packet_number": 110
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06481,
+    "longitude": -71.96536,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6391,
+    "packet_number": 111
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06493,
+    "longitude": -71.96543,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6406,
+    "packet_number": 112
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06491,
+    "longitude": -71.96543,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6422,
+    "packet_number": 113
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06496,
+    "longitude": -71.96554,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6437,
+    "packet_number": 114
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6453,
+    "packet_number": 115
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6469,
+    "packet_number": 116
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06484,
+    "longitude": -71.96552,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6484,
+    "packet_number": 117
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06496,
+    "longitude": -71.96545,
+    "altitude": 128,
+    "has_fix": true,
+    "uptime": 6500,
+    "packet_number": 118
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06503,
+    "longitude": -71.9654,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6516,
+    "packet_number": 119
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.065,
+    "longitude": -71.96539,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6531,
+    "packet_number": 120
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06499,
+    "longitude": -71.96537,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6547,
+    "packet_number": 121
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6562,
+    "packet_number": 122
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6578,
+    "packet_number": 123
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06496,
+    "longitude": -71.9654,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6593,
+    "packet_number": 124
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06498,
+    "longitude": -71.96536,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6609,
+    "packet_number": 125
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06499,
+    "longitude": -71.96552,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6624,
+    "packet_number": 126
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06503,
+    "longitude": -71.96549,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6640,
+    "packet_number": 127
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06502,
+    "longitude": -71.96536,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6655,
+    "packet_number": 0
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06505,
+    "longitude": -71.96533,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6671,
+    "packet_number": 1
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06504,
+    "longitude": -71.96543,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6686,
+    "packet_number": 2
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06498,
+    "longitude": -71.96528,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6702,
+    "packet_number": 3
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6722,
+    "packet_number": 4
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6738,
+    "packet_number": 5
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 6753,
+    "packet_number": 6
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 313,
+    "packet_number": 1
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 329,
+    "packet_number": 2
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 344,
+    "packet_number": 3
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 360,
+    "packet_number": 4
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 376,
+    "packet_number": 5
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 391,
+    "packet_number": 6
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 407,
+    "packet_number": 7
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 427,
+    "packet_number": 8
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 442,
+    "packet_number": 9
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 458,
+    "packet_number": 10
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 478,
+    "packet_number": 11
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 493,
+    "packet_number": 12
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 509,
+    "packet_number": 13
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06528,
+    "longitude": -71.96519,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 524,
+    "packet_number": 14
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06514,
+    "longitude": -71.96543,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 540,
+    "packet_number": 15
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06511,
+    "longitude": -71.96553,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 555,
+    "packet_number": 16
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06508,
+    "longitude": -71.96546,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 571,
+    "packet_number": 17
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.0651,
+    "longitude": -71.96542,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 586,
+    "packet_number": 18
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06512,
+    "longitude": -71.96541,
+    "altitude": 117,
+    "has_fix": true,
+    "uptime": 606,
+    "packet_number": 19
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 622,
+    "packet_number": 20
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06517,
+    "longitude": -71.96552,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 638,
+    "packet_number": 21
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06523,
+    "longitude": -71.96555,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 653,
+    "packet_number": 22
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06525,
+    "longitude": -71.96555,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 669,
+    "packet_number": 23
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06513,
+    "longitude": -71.96557,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 684,
+    "packet_number": 24
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06506,
+    "longitude": -71.96567,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 700,
+    "packet_number": 25
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.0649,
+    "longitude": -71.96597,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 715,
+    "packet_number": 26
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 735,
+    "packet_number": 27
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06494,
+    "longitude": -71.96588,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 751,
+    "packet_number": 28
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 771,
+    "packet_number": 29
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06504,
+    "longitude": -71.96554,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 786,
+    "packet_number": 30
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06502,
+    "longitude": -71.96547,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 802,
+    "packet_number": 31
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06498,
+    "longitude": -71.96547,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 817,
+    "packet_number": 32
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06469,
+    "longitude": -71.96558,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 833,
+    "packet_number": 33
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06481,
+    "longitude": -71.96567,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 849,
+    "packet_number": 34
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06496,
+    "longitude": -71.96567,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 864,
+    "packet_number": 35
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06507,
+    "longitude": -71.96562,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 880,
+    "packet_number": 36
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06514,
+    "longitude": -71.9656,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 895,
+    "packet_number": 37
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 916,
+    "packet_number": 38
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06517,
+    "longitude": -71.96561,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 931,
+    "packet_number": 39
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 946,
+    "packet_number": 40
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06486,
+    "longitude": -71.96554,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 962,
+    "packet_number": 41
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06493,
+    "longitude": -71.96562,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 977,
+    "packet_number": 42
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06514,
+    "longitude": -71.96555,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 993,
+    "packet_number": 43
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.0652,
+    "longitude": -71.9655,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1008,
+    "packet_number": 44
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.0651,
+    "longitude": -71.9655,
+    "altitude": 133,
+    "has_fix": true,
+    "uptime": 1028,
+    "packet_number": 45
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06509,
+    "longitude": -71.96553,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1043,
+    "packet_number": 46
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1059,
+    "packet_number": 47
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06536,
+    "longitude": -71.96541,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1075,
+    "packet_number": 48
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06527,
+    "longitude": -71.96552,
+    "altitude": 140,
+    "has_fix": true,
+    "uptime": 1091,
+    "packet_number": 49
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06513,
+    "longitude": -71.96565,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1106,
+    "packet_number": 50
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06521,
+    "longitude": -71.96567,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1121,
+    "packet_number": 51
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06552,
+    "longitude": -71.96556,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1137,
+    "packet_number": 52
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06525,
+    "longitude": -71.96561,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1152,
+    "packet_number": 53
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06519,
+    "longitude": -71.96563,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1168,
+    "packet_number": 54
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06513,
+    "longitude": -71.96571,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1183,
+    "packet_number": 55
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06511,
+    "longitude": -71.96576,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1199,
+    "packet_number": 56
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06515,
+    "longitude": -71.96532,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1214,
+    "packet_number": 57
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06509,
+    "longitude": -71.96533,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1230,
+    "packet_number": 58
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06501,
+    "longitude": -71.96557,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1245,
+    "packet_number": 59
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.0649,
+    "longitude": -71.96581,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1261,
+    "packet_number": 60
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06487,
+    "longitude": -71.96574,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1276,
+    "packet_number": 61
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06488,
+    "longitude": -71.96571,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1292,
+    "packet_number": 62
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06494,
+    "longitude": -71.96568,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1307,
+    "packet_number": 63
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06498,
+    "longitude": -71.96559,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1323,
+    "packet_number": 64
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06509,
+    "longitude": -71.96551,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1338,
+    "packet_number": 65
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06508,
+    "longitude": -71.96548,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1354,
+    "packet_number": 66
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.0651,
+    "longitude": -71.96546,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1369,
+    "packet_number": 67
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06505,
+    "longitude": -71.96535,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1385,
+    "packet_number": 68
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06501,
+    "longitude": -71.96533,
+    "altitude": 153,
+    "has_fix": true,
+    "uptime": 1401,
+    "packet_number": 69
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06501,
+    "longitude": -71.96531,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1416,
+    "packet_number": 70
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06502,
+    "longitude": -71.96522,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1432,
+    "packet_number": 71
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.0651,
+    "longitude": -71.96545,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1448,
+    "packet_number": 72
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06526,
+    "longitude": -71.9655,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1464,
+    "packet_number": 73
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06526,
+    "longitude": -71.96552,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1479,
+    "packet_number": 74
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1500,
+    "packet_number": 75
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.0651,
+    "longitude": -71.96579,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1515,
+    "packet_number": 76
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1530,
+    "packet_number": 77
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06511,
+    "longitude": -71.96556,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1546,
+    "packet_number": 78
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06512,
+    "longitude": -71.96548,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1561,
+    "packet_number": 79
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06517,
+    "longitude": -71.96552,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1577,
+    "packet_number": 80
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06509,
+    "longitude": -71.96555,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1592,
+    "packet_number": 81
+}
+{
+    "cpu_temp": 38,
+    "battery_voltage": 0.0,
+    "latitude": 46.06508,
+    "longitude": -71.96558,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1608,
+    "packet_number": 82
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06506,
+    "longitude": -71.96557,
+    "altitude": 129,
+    "has_fix": true,
+    "uptime": 1624,
+    "packet_number": 83
+}
+{
+    "cpu_temp": 35,
+    "battery_voltage": 0.0,
+    "latitude": 46.06507,
+    "longitude": -71.96569,
+    "altitude": 130,
+    "has_fix": true,
+    "uptime": 1640,
+    "packet_number": 84
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06509,
+    "longitude": -71.96572,
+    "altitude": 133,
+    "has_fix": true,
+    "uptime": 1656,
+    "packet_number": 85
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06502,
+    "longitude": -71.96559,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1671,
+    "packet_number": 86
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06504,
+    "longitude": -71.96558,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1687,
+    "packet_number": 87
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.06503,
+    "longitude": -71.9655,
+    "altitude": 130,
+    "has_fix": true,
+    "uptime": 1703,
+    "packet_number": 88
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 1723,
+    "packet_number": 89
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 46.0651,
+    "longitude": -71.9657,
+    "altitude": 126,
+    "has_fix": true,
+    "uptime": 1742,
+    "packet_number": 90
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 396,
+    "packet_number": 1
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 411,
+    "packet_number": 2
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 426,
+    "packet_number": 3
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 441,
+    "packet_number": 4
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 457,
+    "packet_number": 5
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 472,
+    "packet_number": 6
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 487,
+    "packet_number": 7
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 502,
+    "packet_number": 8
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 517,
+    "packet_number": 9
+}
+{
+    "cpu_temp": 36,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 532,
+    "packet_number": 10
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 547,
+    "packet_number": 11
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 562,
+    "packet_number": 12
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 577,
+    "packet_number": 13
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 593,
+    "packet_number": 14
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 608,
+    "packet_number": 15
+}
+{
+    "cpu_temp": 37,
+    "battery_voltage": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 623,
+    "packet_number": 16
+}

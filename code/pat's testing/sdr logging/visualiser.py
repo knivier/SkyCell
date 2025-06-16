@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 
 # --- Config: Choose your file path and name here ---
-directory = "/home/patcybermind/Documents/hcprojects/apex/SkyCell/iq_data"  # <-- change this
+directory = "C:\\Users\\patog\\OneDrive\\Documents\\apex\\SkyCell\\code\\pat's testing\\sdr logging"  # <-- change this /home/patcybermind/Documents/hcprojects/apex/SkyCell/iq_data
 filename = "iq_100MHz.iq"             # <-- change this
 sample_rate = 2.4e6  # Hz
 fft_size = 4096
