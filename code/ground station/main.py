@@ -6,7 +6,6 @@ import os
 import meshtastic.serial_interface
 from pubsub import pub
 import time
-import os
 import json
 import ast
 

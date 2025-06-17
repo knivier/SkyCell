@@ -95,8 +95,8 @@ def get_uptime():
 
 class Telemetry:
     def __init__(self, gps_connection_port="/dev/ttyS2"):
-        self.cpu_temp = None
-        self.battery_voltage = None
+        self.cpu_temp = 0
+        self.battery_voltage = 0
         self.gps_connection_port = gps_connection_port
         self.gps_data = {
             'latitude': 0.0,
@@ -231,7 +231,7 @@ class Telemetry:
         self.gps_data = self.get_gps_data()  # Placeholder for GPS coordinates
         self.uptime = get_uptime()
         self.external_sensor_data = get_external_sensors()  # Get external sensors data
-        self.battery_voltage = get_battery_voltage
+        self.battery_voltage = get_battery_voltage()
         #self.battery_voltage = get_battery_voltage()  # Implement this function if needed
         #self.battery_percentage = get_battery_percentage()  # Implement this function if needed
     

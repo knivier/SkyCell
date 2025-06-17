@@ -57,7 +57,7 @@ while run == True:
         print("Hex string:", telemetry_data)
         
     except Exception as e:
-        print(f"Error sending telemetry message attempting reconection: {e}")
+        print(f"Error sending telemetry message attempting reconnection: {e}")
         mesh_node.close()
         mesh_node = meshtastic.serial_interface.SerialInterface(meshdevice)
         print("Reconnected to Meshtastic interface\n")
