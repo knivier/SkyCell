@@ -10,7 +10,7 @@ def write_sweep_number(sweep_number):
         print(f"Error writing sweep number: {e}")
 
 
-def run_sweep():
+def run_sweep(currrent_sweep_number):
     # Parameters
     start_freq = 26_000_000       # 24 MHz
     end_freq = 1_500_000_000      # 1.5 GHz
@@ -22,11 +22,11 @@ def run_sweep():
     output_dir = "iq_data"
     os.makedirs(output_dir, exist_ok=True)
 
-    print(f"[+] Starting sweep from {start_freq / 1_000_000:.3f} MHz to {end_freq / 1_000_000:.3f} MHz with step {step_freq / 1_000_000:.3f} MHz")
+    print(f"[+] Starting sweep {currrent_sweep_number} from {start_freq / 1_000_000:.3f} MHz to {end_freq / 1_000_000:.3f} MHz with step {step_freq / 1_000_000:.3f} MHz")
 
 
     for freq in range(start_freq, end_freq + 1, step_freq):
-        out_file = os.path.join(output_dir, f"iq_{freq//1_000_000}MHz.iq")
+        out_file = os.path.join(output_dir, f"iq_{currrent_sweep_number}_{freq//1_000_000}MHz.iq")
         print(f"[+] Capturing {freq / 1_000_000:.3f} MHz -> {out_file}")
 
         cmd = [
