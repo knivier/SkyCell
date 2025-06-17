@@ -66,7 +66,7 @@ def get_uptime():
         return uptime.split()[0]  # Return the first part which is the uptime in seconds
     except Exception as e:
         print(f"Error reading uptime: {e}")
-        return "3737"
+        return 3737
 
 def log_sweep_number_uptime(sweep_number, uptime):
     try:
@@ -89,8 +89,8 @@ while True:
 
     print(f"Running sweep number: {get_current_sweep_number()} uptime: {get_uptime()} seconds")
     try:
-        #run_sweep(get_current_sweep_number)  # Run the sweep
-        continue 
+        run_sweep(get_current_sweep_number)  # Run the sweep
+        print("ran sweep...") 
     except Exception as e:
         print(f"Error during sweep: {e}")
         
@@ -99,7 +99,9 @@ while True:
     new_sweep_number = get_current_sweep_number() + 1
     write_sweep_number(new_sweep_number) 
 
-    print(f"✅ Sweep completed. Uptime: {get_uptime()} seconds") # TODO: FIX INCREMENT NOT INCREMENTING
+    
+    print(f"Sweep completed. Uptime: {get_uptime()} seconds") 
+    
 
     
     
