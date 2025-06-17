@@ -5,6 +5,71 @@ import pynmea2
 import time
 import struct
 
+# reminder to self: pressure, humidity, temp, altitude
+external_sensors_port = "/dev/tty_tty8"  # Adjust this to your external sensors port
+
+def get_external_sensors():
+    # Placeholder for external sensors reading logic
+    # Implement this function to read actual sensor data
+    # start new serial connection to the external sensors
+
+    default_error_return = {
+        'pressure': 37,  # Example value in hPa
+        'humidity': 37,     # Example value in %
+        'temperature': 37,  # Example value in °C
+        'altitude': 37     # Example value in meters
+    }
+
+    try:
+        ser = serial.Serial(external_sensors_port, baudrate=115200, timeout=1)
+        
+    except Exception as e:
+        print(f"Error opening serial port: {e}")
+        try:
+            ser.close()
+        except Exception as e:
+            print(f"Error closing serial port: {e}")
+        return default_error_return
+
+    try:
+        line = ser.readline().decode('ascii', errors='ignore').strip()
+        
+    except Exception as e:
+        print(f"Error reading from external gps serial: {e}")
+        try:
+            ser.close()
+        except Exception as e:
+            print(f"Error closing serial port: {e}")
+        return default_error_return
+    
+    print("External sensors data:", line)
+
+    # format: "pressure,humidity,temperature,altitude"
+    try:
+        pressure, humidity, temperature, altitude = map(int, line.split(','))
+        return_data = {
+            'pressure': pressure,  # in hPa
+            'humidity': humidity,  # in %
+            'temperature': temperature,  # in °C
+            'altitude': altitude  # in meters
+        }
+        print("sensor data:", return_data)
+        try:
+            ser.close()
+        except Exception as e:
+            print(f"Error closing serial port: {e}")
+        return  return_data
+    except Exception as e:
+        print(f"Error parsing external sensors data: {e}")
+        
+    
+    try:
+        ser.close()
+    except Exception as e:
+        print(f"Error closing serial port: {e}")
+    return default_error_return
+    
+
 
 def get_cpu_temp():
     try:
@@ -12,7 +77,8 @@ def get_cpu_temp():
             temp_str = f.read().strip()
             return int(temp_str) / 1000.0  # Convert to °C
     except FileNotFoundError:
-        return "fail"
+        return 37
+    
 def get_battery_voltage():
     # Placeholder for battery voltage reading logic
     # Implement this function to read the actual battery voltage
@@ -40,6 +106,12 @@ class Telemetry:
         }
         self.battery_voltage = 0.0
         self.uptime = 0.0
+        self.external_sensor_data = {
+        'pressure': 0,  # Example value in hPa
+        'humidity': 0,     # Example value in %
+        'temperature': 0,  # Example value in °C
+        'altitude': 0     # Example value in meters
+    }
     
     def get_telemetry(self, packet_number=0):
         
@@ -50,7 +122,7 @@ class Telemetry:
                 f"GPS Latitude: {self.gps_data['latitude']}°N, "
                 f"GPS Longitude: {self.gps_data['longitude']}°E, "
                 f"GPS Altitude: {self.gps_data['altitude']} m, "
-                f"GPS Fix: {self.gps_data['has_fix']}, Uptime: {self.uptime} seconds, Packet Number: {packet_number}")
+                f"GPS Fix: {self.gps_data['has_fix']}, Uptime: {self.uptime} seconds, Packet Number: {packet_number}, sensor data: {self.external_sensor_data}")
         except Exception as e:
             print(f"Error printing telemetry data: {e}")
         
@@ -67,9 +139,14 @@ class Telemetry:
         uptime_int = max(0, min(65535, int(self.uptime)))
         packet_number_int = max(0, min(127, int(packet_number)))
 
+        sensor_pressure_int = max(-128, min(127, int(self.external_sensor_data['pressure'])))
+        sensor_humidity_int = max(-128, min(127, int(self.external_sensor_data['humidity'])))
+        sensor_temperature_int = max(-128, min(127, int(self.external_sensor_data['temperature'])))
+        sensor_altitude_int = max(-128, min(127, int(self.external_sensor_data['altitude'])))
+
         # Pack into bytes (big endian, signed for lat/long)
         packed = struct.pack(
-            '>bHiiHbHb',  # format: > for big-endian, H for unsigned short (2 bytes), i for signed int (4 bytes), b for signed char (1 byte)
+            '>bHiiHbHbbbbb',  # format: > for big-endian, H for unsigned short (2 bytes), i for signed int (4 bytes), b for signed char (1 byte)
             cpu_temp_int, # 1bytes
             batv_int, # 2bytes
             lat_int, # 4bytes
@@ -77,7 +154,12 @@ class Telemetry:
             alt_int, # 2bytes
             has_fix_int, # 1byte
             uptime_int, # 2bytes
-            packet_number_int  # 1 bytes total: 17 bytes
+            packet_number_int,  # 1 bytes total: 17 bytes
+
+            sensor_pressure_int,  # 1 byte
+            sensor_humidity_int,  # 1 byte
+            sensor_temperature_int,  # 1 byte
+            sensor_altitude_int   # 1 byte total: 21 bytes
         )
 
         # Convert to hex string for transmission
@@ -148,7 +230,8 @@ class Telemetry:
         self.cpu_temp = get_cpu_temp()
         self.gps_data = self.get_gps_data()  # Placeholder for GPS coordinates
         self.uptime = get_uptime()
-        #self.battery_voltage = get
+        self.external_sensor_data = get_external_sensors()  # Get external sensors data
+        self.battery_voltage = get_battery_voltage
         #self.battery_voltage = get_battery_voltage()  # Implement this function if needed
         #self.battery_percentage = get_battery_percentage()  # Implement this function if needed
     

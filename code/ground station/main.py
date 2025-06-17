@@ -17,7 +17,7 @@ import ast
 
 # Ensure it matches expected length
 def unpack_payload(received_payload):
-    if len(received_payload) != 17:
+    if len(received_payload) != 21:
         print("Invalid packet length:", len(received_payload))
     else:
         # Unpack the data
@@ -29,8 +29,13 @@ def unpack_payload(received_payload):
             alt_int,
             has_fix_int,
             uptime_int,
-            packet_number_int
-        ) = struct.unpack('>bHiiHbHb', received_payload)
+            packet_number_int,
+
+            sensor_pressure_int,  # 1 byte
+            sensor_humidity_int,  # 1 byte
+            sensor_temperature_int,  # 1 byte
+            sensor_altitude_int   # 1 byte total: 21 bytes
+        ) = struct.unpack('>bHiiHbHbbbbb', received_payload)
 
         # Convert back to usable units
         cpu_temp = cpu_temp_int
@@ -42,6 +47,11 @@ def unpack_payload(received_payload):
         uptime = uptime_int
         packet_number = packet_number_int
 
+        sensor_pressure = sensor_pressure_int
+        sensor_humidity = sensor_humidity_int
+        sensor_temperature = sensor_temperature_int
+        sensor_altitude = sensor_altitude_int
+
         # Display results
         print("CPU Temp:", cpu_temp, "°C")
         print("Battery Voltage:", battery_voltage, "V")
@@ -52,6 +62,13 @@ def unpack_payload(received_payload):
         print("Uptime:", uptime, "s")
         print("Packet Number:", packet_number)
 
+        print("Sensor Pressure:", sensor_pressure, "hPa")
+        print("Sensor Humidity:", sensor_humidity, "%")
+        print("Sensor Temperature:", sensor_temperature, "°C")
+        print("Sensor Altitude:", sensor_altitude, "m")
+        # Print raw packet bytes
+        print("Raw packet bytes:", [hex(b) for b in received_payload])
+
         # convert to json
         telemetry_data = {
             "cpu_temp": cpu_temp,
@@ -61,7 +78,12 @@ def unpack_payload(received_payload):
             "altitude": altitude,
             "has_fix": has_fix,
             "uptime": uptime,
-            "packet_number": packet_number
+            "packet_number": packet_number,
+
+            "sensor_pressure": sensor_pressure,
+            "sensor_humidity": sensor_humidity,
+            "sensor_temperature": sensor_temperature,
+            "sensor_altitude": sensor_altitude
         }
 
 

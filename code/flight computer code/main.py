@@ -12,6 +12,7 @@ print("\nConnected to Meshtastic interface\n")
 
 
 
+
 def send_message(message):
     mesh_node.sendData(
         text=message,

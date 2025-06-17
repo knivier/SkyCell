@@ -18,7 +18,7 @@ def run_sweep(currrent_sweep_number):
     sample_rate = 2_400_000       # 2.4 MSPS
     duration_sec = 0.1            # 100 ms
     samples = int(sample_rate * duration_sec)
-    gain = 25                     # Adjust as needed TODO: ADJUST GAIN TO SEE NOISE FLOOR BETTER
+    gain = 30                     # Adjust as needed TODO: ADJUST GAIN TO SEE NOISE FLOOR BETTER 30
     output_dir = "iq_data"
     os.makedirs(output_dir, exist_ok=True)
 
