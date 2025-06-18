@@ -29,7 +29,7 @@ def read_balloon_data():
         return None
     with open(DATA_FILE, 'r') as f:
         return json.load(f)
-
+    
 def log_to_db(data):
     conn = sqlite3.connect(DB_FILE)
     c = conn.cursor()
@@ -38,37 +38,45 @@ def log_to_db(data):
         CREATE TABLE IF NOT EXISTS telemetry (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             timestamp TEXT,
-            altitude REAL,
+            cpu_temp REAL,
+            battery_voltage REAL,
             latitude REAL,
             longitude REAL,
-            temperature REAL,
-            signal_strength REAL,
-            bandwidth REAL,
-            barometric REAL,
-            battery REAL,
-            interference REAL
+            altitude REAL,
+            has_fix INTEGER,
+            uptime INTEGER,
+            packet_number INTEGER,
+            sensor_pressure REAL,
+            sensor_humidity REAL,
+            sensor_temperature REAL,
+            sensor_altitude REAL
         )
     ''')
     c.execute('''
         INSERT INTO telemetry (
-            timestamp, altitude, latitude, longitude, temperature,
-            signal_strength, bandwidth, barometric, battery, interference
+            timestamp, cpu_temp, battery_voltage, latitude, longitude, altitude,
+            has_fix, uptime, packet_number, sensor_pressure, sensor_humidity,
+            sensor_temperature, sensor_altitude
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ''', (
         data.get("last_updated"),
-        data.get("altitude"),
+        data.get("cpu_temp"),
+        data.get("battery_voltage"),
         data.get("latitude"),
         data.get("longitude"),
-        data.get("temperature"),
-        data.get("signal_strength"),
-        data.get("bandwidth"),
-        data.get("barometric"),
-        data.get("battery"),
-        data.get("interference")
+        data.get("altitude"),
+        int(data.get("has_fix", False)),
+        data.get("uptime"),
+        data.get("packet_number"),
+        data.get("sensor_pressure"),
+        data.get("sensor_humidity"),
+        data.get("sensor_temperature"),
+        data.get("sensor_altitude")
     ))
     conn.commit()
     conn.close()
+
 
 def background_logger():
     while True:
