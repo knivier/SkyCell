@@ -1,0 +1,16 @@
+{
+    "cpu_temp": 40,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 9862,
+    "packet_number": 27,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37,
+    "rssi": -58,
+    "snr": 6.5
+}

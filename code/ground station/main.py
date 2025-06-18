@@ -15,7 +15,7 @@ import ast
 
 
 # Ensure it matches expected length
-def unpack_payload(received_payload):
+def unpack_payload(received_payload, packet):
     if len(received_payload) != 21:
         print("Invalid packet length:", len(received_payload))
     else:
@@ -65,6 +65,18 @@ def unpack_payload(received_payload):
         print("Sensor Humidity:", sensor_humidity, "%")
         print("Sensor Temperature:", sensor_temperature, "°C")
         print("Sensor Altitude:", sensor_altitude, "m")
+
+        # radio data
+        try:
+            rssi = packet.get('rxRssi', 77)
+            snr = packet.get('rxSnr', 77)
+        except Exception as e:
+            rssi = 37
+            snr = 37
+        
+        print("Rssi:", rssi)
+        print("SNR:", snr)
+
         # Print raw packet bytes
         print("Raw packet bytes:", [hex(b) for b in received_payload])
 
@@ -82,7 +94,10 @@ def unpack_payload(received_payload):
             "sensor_pressure": sensor_pressure,
             "sensor_humidity": sensor_humidity,
             "sensor_temperature": sensor_temperature,
-            "sensor_altitude": sensor_altitude
+            "sensor_altitude": sensor_altitude,
+
+            "rssi": rssi,
+            "snr": snr
         }
 
 
@@ -108,7 +123,7 @@ def unpack_payload(received_payload):
 
 
 interface = meshtastic.serial_interface.SerialInterface("COM13") # PORT
-interface.frequency = int(915e6)  # Replace with your desired frequency
+interface.frequency = int(915.5e6)  # Replace with your desired frequency
 print("Connected to Meshtastic interface\n")
 
 def onReceive(packet, interface):
@@ -117,7 +132,7 @@ def onReceive(packet, interface):
         # Extract only the decoded payload from the packet
     if 'decoded' in packet and 'payload' in packet['decoded']:
         payload = packet['decoded']['payload']
-        unpack_payload(payload)
+        unpack_payload(payload, packet)
     else:
         print("Error: Packet does not contain decoded payload")
 
@@ -126,60 +141,6 @@ pub.subscribe(onReceive, 'meshtastic.receive.text')
 # Also try subscribing to telemetry specifically
 pub.subscribe(onReceive, 'meshtastic.receive.telemetry')
 
-def write_telemetry(telemetry):
-    print(f"write_telemetry called with: {repr(telemetry)}")
-    
-    # Show current working directory
-    current_dir = os.getcwd()
-    print(f"📁 Current working directory: {current_dir}")
-    
-    # Always write to files, regardless of JSON conversion success
-    try:
-        # Append to log file
-        log_file_path = os.path.abspath("telemetry_log.json")
-        with open("telemetry_log.json", 'a') as tl:
-            tl.write(telemetry + '\n')
-            tl.flush()
-            os.fsync(tl.fileno())
-        print(f"✅ Telemetry data appended to log file: {log_file_path}")
-        print(f"📏 Log file size: {os.path.getsize('telemetry_log.json')} bytes")
-        
-        # Write to current telemetry file
-        telemetry_file_path = os.path.abspath("telemetry.json")
-        with open("telemetry.json", 'w') as t:
-            t.write(telemetry)
-            t.flush()
-            os.fsync(t.fileno())
-        print(f"✅ Telemetry data written to: {telemetry_file_path}")
-        print(f"📏 Telemetry file size: {os.path.getsize('telemetry.json')} bytes")
-        
-    except Exception as e:
-        print(f"❌ Failed to write to files: {e}")
-        return
-    
-    # Try to parse and pretty-print JSON (optional, doesn't affect file writing)
-    try:
-        if telemetry.startswith("'"):
-            # Handle single quotes
-            telemetry_dict = ast.literal_eval(telemetry)
-        else:
-            # Handle double quotes
-            telemetry_dict = json.loads(telemetry)
-        
-        telemetry_json = json.dumps(telemetry_dict, indent=2)
-        print("✅ Telemetry data converted to JSON:", telemetry_json)
-        
-        # Write pretty JSON to a separate file
-        pretty_file_path = os.path.abspath("telemetry_pretty.json")
-        with open("telemetry_pretty.json", 'w') as tp:
-            tp.write(telemetry_json)
-            tp.flush()
-            os.fsync(tp.fileno())
-        print(f"✅ Pretty JSON written to: {pretty_file_path}")
-        print(f"📏 Pretty file size: {os.path.getsize('telemetry_pretty.json')} bytes")
-        
-    except Exception as e:
-        print(f"⚠️  Could not parse as JSON (but files were still written): {e}")
 
 print("Listening for messages... Press Ctrl+C to stop")
 try:

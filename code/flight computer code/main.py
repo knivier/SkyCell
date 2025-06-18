@@ -6,7 +6,9 @@ import subprocess
 run = True
 meshdevice = "/dev/ttyUSB0"  # Adjust this to your Meshtastic device path 
 mesh_node = meshtastic.serial_interface.SerialInterface(meshdevice)
+mesh_node.frequency = int(915.5e6)  # Set frequency to 915 MHz, adjust as needed
 print("\nConnected to Meshtastic interface\n")
+#change frequency
 
 
 
