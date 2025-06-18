@@ -126,6 +126,7 @@ interface = meshtastic.serial_interface.SerialInterface("COM13") # PORT
 interface.frequency = int(915.5e6)  # Replace with your desired frequency
 print("Connected to Meshtastic interface\n")
 
+
 def onReceive(packet, interface):
     print(f"Raw packet received: {packet}")  # Debug: see the full packet structure
     

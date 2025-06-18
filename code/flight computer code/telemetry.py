@@ -20,26 +20,30 @@ def get_external_sensors():
         'altitude': 37     # Example value in meters
     }
 
+    ser = None
     try:
         ser = serial.Serial(external_sensors_port, baudrate=115200, timeout=1)
-        
+        print(f"Opened serial port {external_sensors_port} for external sensors")
+        try:
+            line = ser.readline().decode('ascii', errors='ignore').strip()
+            print("External sensors data:", line)
+            # format: "pressure,humidity,temperature,altitude"
+            pressure, humidity, temperature, altitude = map(int, line.split(','))
+            return_data = {
+                'pressure': pressure,
+                'humidity': humidity,
+                'temperature': temperature,
+                'altitude': altitude
+            }
+            print("sensor data:", return_data)
+            return return_data
+        except Exception as e:
+            print(f"Error reading/parsing external sensors data: {e}")
+            return default_error_return
+        finally:
+            ser.close()
     except Exception as e:
         print(f"Error opening serial port: {e}")
-        try:
-            ser.close()
-        except Exception as e:
-            print(f"Error closing serial port: {e}")
-        return default_error_return
-
-    try:
-        line = ser.readline().decode('ascii', errors='ignore').strip()
-        
-    except Exception as e:
-        print(f"Error reading from external gps serial: {e}")
-        try:
-            ser.close()
-        except Exception as e:
-            print(f"Error closing serial port: {e}")
         return default_error_return
     
     print("External sensors data:", line)
@@ -228,10 +232,15 @@ class Telemetry:
 
     def update_telemetry(self):
         self.cpu_temp = get_cpu_temp()
+        print("got cpu temp")
         self.gps_data = self.get_gps_data()  # Placeholder for GPS coordinates
+        print("got gps data")
         self.uptime = get_uptime()
+        print("got uptime")
         self.external_sensor_data = get_external_sensors()  # Get external sensors data
+        print("got external sensors data")
         self.battery_voltage = get_battery_voltage()
+        print("got battery voltage")
         #self.battery_voltage = get_battery_voltage()  # Implement this function if needed
         #self.battery_percentage = get_battery_percentage()  # Implement this function if needed
     
