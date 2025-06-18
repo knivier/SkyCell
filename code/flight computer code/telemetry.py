@@ -6,7 +6,7 @@ import time
 import struct
 
 # reminder to self: pressure, humidity, temp, altitude
-external_sensors_port = "/dev/tty_tty8"  # Adjust this to your external sensors port
+external_sensors_port = "/dev/ttyACM0"  # Adjust this to your external sensors port
 
 def get_external_sensors():
     # Placeholder for external sensors reading logic
