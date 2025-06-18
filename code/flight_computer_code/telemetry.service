@@ -3,8 +3,8 @@ Description=flight computer main.py
 After=network.target
 
 [Service]
-WorkingDirectory=/home/apex/skycell/SkyCell/code/flight computer code/
-ExecStart=/usr/bin/python3 /home/apex/skycell/SkyCell/code/flight computer code/main.py
+WorkingDirectory=/home/apex/skycell/SkyCell/code/flight_computer_code/
+ExecStart=/usr/bin/python3 /home/apex/skycell/SkyCell/code/flight_computer_code/main.py
 Restart=always
 RestartSec=3
 User=apex

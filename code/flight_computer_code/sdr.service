@@ -1,0 +1,17 @@
+[Unit]
+Description=flight computer main-sdr.py
+After=network.target
+
+[Service]
+WorkingDirectory=/home/apex/skycell/SkyCell/code/flight_computer_code/
+ExecStart=/usr/bin/python3 /home/apex/skycell/SkyCell/code/flight_computer_code/main-sdr.py
+Restart=always
+RestartSec=3
+User=apex
+Environment=PYTHONUNBUFFERED=1
+
+StandardOutput=append:/home/apex/skycell/flightcomputersdr.log
+StandardError=append:/home/apex/skycell/flightcomputersdr.log
+
+[Install]
+WantedBy=multi-user.target

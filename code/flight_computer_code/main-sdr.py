@@ -90,7 +90,7 @@ log_sweep_number_uptime(current_sn, get_uptime())
 
 
 
-interval_seconds = 6 * 60  # Run sweeps every 100 seconds
+interval_seconds = 3 * 60  # Run sweeps every 100 seconds
 while True:
     for i in range(0, interval_seconds):  
         time.sleep(1)  
