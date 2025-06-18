@@ -1,0 +1,17 @@
+[Unit]
+Description=flight computer main.py
+After=network.target
+
+[Service]
+WorkingDirectory=/home/apex/skycell/SkyCell/code/flight computer code/
+ExecStart=/usr/bin/python3 /home/apex/skycell/SkyCell/code/flight computer code/main.py
+Restart=always
+RestartSec=3
+User=apex
+Environment=PYTHONUNBUFFERED=1
+
+StandardOutput=append:/home/apex/skycell/flightcomputer.log
+StandardError=append:/home/apex/skycell/flightcomputer.log
+
+[Install]
+WantedBy=multi-user.target
