@@ -77,11 +77,17 @@ def log_sweep_number_uptime(sweep_number, uptime):
     except Exception as e:
         print(f"Error logging sweep number and uptime: {e}")
 
-#run_sweep()  # Initial sweep to start with
-print("ran sdr sweep number: ", get_current_sweep_number())
-log_sweep_number_uptime(get_current_sweep_number(), get_uptime())
+
+
+current_sn = get_current_sweep_number()
+
 new_sweep_number = get_current_sweep_number() + 1
 write_sweep_number(new_sweep_number) 
+
+run_sweep(current_sn)  # Initial sweep to start with
+print("ran sdr sweep number: ", current_sn)
+log_sweep_number_uptime(current_sn, get_uptime())
+
 
 
 interval_seconds = 6 * 60  # Run sweeps every 100 seconds
