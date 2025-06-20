@@ -1,14 +1,29 @@
 {
+<<<<<<< HEAD
     "cpu_temp": 44,
+=======
+    "cpu_temp": 41,
+>>>>>>> 9598e8b9534c2d7ddb57ef330a9035f9a4bb8b24
     "battery_voltage": 3.7,
     "latitude": 0.0,
     "longitude": 0.0,
     "altitude": 0,
     "has_fix": false,
+<<<<<<< HEAD
     "uptime": 5263,
     "packet_number": 79,
     "sensor_pressure": 37,
     "sensor_humidity": 37,
     "sensor_temperature": 37,
     "sensor_altitude": 37
+=======
+    "uptime": 7795,
+    "packet_number": 32,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37,
+    "rssi": -69,
+    "snr": 7.5
+>>>>>>> 9598e8b9534c2d7ddb57ef330a9035f9a4bb8b24
 }
