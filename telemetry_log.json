@@ -12043,3 +12043,171 @@ telemetry_packet: cput(46.23) batv(None) gps(lat(46.055911333333334) long(-71.92
     "uptime": 623,
     "packet_number": 16
 }
+{
+    "cpu_temp": 33,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 133,
+    "packet_number": 8,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 33,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 148,
+    "packet_number": 9,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 34,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 163,
+    "packet_number": 10,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 46,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3328,
+    "packet_number": 79,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 46,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3343,
+    "packet_number": 80,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 46,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3359,
+    "packet_number": 81,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 46,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3374,
+    "packet_number": 82,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 46,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 3389,
+    "packet_number": 83,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 44,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5217,
+    "packet_number": 76,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 44,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5232,
+    "packet_number": 77,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 44,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5247,
+    "packet_number": 78,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
+{
+    "cpu_temp": 44,
+    "battery_voltage": 3.7,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0,
+    "has_fix": false,
+    "uptime": 5263,
+    "packet_number": 79,
+    "sensor_pressure": 37,
+    "sensor_humidity": 37,
+    "sensor_temperature": 37,
+    "sensor_altitude": 37
+}
