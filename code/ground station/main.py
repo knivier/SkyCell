@@ -122,7 +122,7 @@ def unpack_payload(received_payload, packet):
 
 
 
-interface = meshtastic.serial_interface.SerialInterface("COM13") # PORT
+interface = meshtastic.serial_interface.SerialInterface("COM9") # PORT
 interface.frequency = int(915e6)  # Replace with your desired frequency
 print("Connected to Meshtastic interface\n")
 

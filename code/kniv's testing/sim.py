@@ -11,7 +11,7 @@ frame_buffer = defaultdict(lambda: {"chunks": {}, "total": 0})
 # Load settings
 def load_settings():
     config = configparser.ConfigParser()
-    config.read(r"kniv's testing\sets.ini")
+    config.read(r"code\kniv's testing\sets.ini")
     s = config["Settings"]
     resolution_map = {
         "120": (160, 120),

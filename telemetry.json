@@ -1,29 +1,16 @@
 {
-<<<<<<< HEAD
-    "cpu_temp": 44,
-=======
-    "cpu_temp": 41,
->>>>>>> 9598e8b9534c2d7ddb57ef330a9035f9a4bb8b24
-    "battery_voltage": 3.7,
-    "latitude": 0.0,
-    "longitude": 0.0,
-    "altitude": 0,
-    "has_fix": false,
-<<<<<<< HEAD
-    "uptime": 5263,
-    "packet_number": 79,
-    "sensor_pressure": 37,
-    "sensor_humidity": 37,
-    "sensor_temperature": 37,
-    "sensor_altitude": 37
-=======
-    "uptime": 7795,
-    "packet_number": 32,
-    "sensor_pressure": 37,
-    "sensor_humidity": 37,
-    "sensor_temperature": 37,
-    "sensor_altitude": 37,
-    "rssi": -69,
-    "snr": 7.5
->>>>>>> 9598e8b9534c2d7ddb57ef330a9035f9a4bb8b24
+    "cpu_temp": 13,
+    "battery_voltage": 8.949,
+    "latitude": 14496.69134,
+    "longitude": 1437.29693,
+    "altitude": 34952,
+    "has_fix": true,
+    "uptime": 15648,
+    "packet_number": 4,
+    "sensor_pressure": 56,
+    "sensor_humidity": 1,
+    "sensor_temperature": 64,
+    "sensor_altitude": 2,
+    "rssi": 77,
+    "snr": 77
 }
